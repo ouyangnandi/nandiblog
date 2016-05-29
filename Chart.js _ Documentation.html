@@ -1,0 +1,3176 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://www.chartjs.org/docs/ -->
+<html class="wf-proximanova-n3-active wf-proximanovasoft-n4-active wf-proximanovasoft-n6-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>Chart.js | Documentation</title>
+		<script async="" src="./Chart.js _ Documentation_files/analytics.js"></script><script src="./Chart.js _ Documentation_files/kfx1lmb.js"></script>
+<link rel="stylesheet" href="./Chart.js _ Documentation_files/l" media="all"><script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+		
+		<link rel="icon" href="http://www.chartjs.org/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="./Chart.js _ Documentation_files/styles.css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-28909194-3', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</head>
+
+	
+
+	
+
+	<body class="sidebar-padded">
+		<nav class="sidebar">
+			
+				
+	<div class="sidebar-section">
+		<h4 class="section-link">
+			<a href="http://www.chartjs.org/docs/#getting-started">Getting started</a>
+		</h4>
+		<ul class="section-sublinks">
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#getting-started-download-chart-js">Download Chart.js</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#getting-started-installation">Installation</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#getting-started-creating-a-chart">Creating a Chart</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#getting-started-global-chart-configuration">Global chart configuration</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#getting-started-colors">Colors</a></li>
+			
+		</ul>
+	</div>
+
+			
+				
+	<div class="sidebar-section">
+		<h4 class="section-link">
+			<a href="http://www.chartjs.org/docs/#line-chart">Line Chart</a>
+		</h4>
+		<ul class="section-sublinks">
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#line-chart-introduction">Introduction</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#line-chart-example-usage">Example usage</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#line-chart-data-structure">Data structure</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#line-chart-chart-options">Chart options</a></li>
+			
+		</ul>
+	</div>
+
+			
+				
+	<div class="sidebar-section">
+		<h4 class="section-link">
+			<a href="http://www.chartjs.org/docs/#bar-chart">Bar Chart</a>
+		</h4>
+		<ul class="section-sublinks">
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#bar-chart-introduction">Introduction</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#bar-chart-example-usage">Example usage</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#bar-chart-data-structure">Data structure</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#bar-chart-chart-options">Chart Options</a></li>
+			
+		</ul>
+	</div>
+
+			
+				
+	<div class="sidebar-section">
+		<h4 class="section-link">
+			<a href="http://www.chartjs.org/docs/#radar-chart">Radar Chart</a>
+		</h4>
+		<ul class="section-sublinks">
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#radar-chart-introduction">Introduction</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#radar-chart-example-usage">Example usage</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#radar-chart-data-structure">Data structure</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#radar-chart-chart-options">Chart Options</a></li>
+			
+		</ul>
+	</div>
+
+			
+				
+	<div class="sidebar-section">
+		<h4 class="section-link">
+			<a href="http://www.chartjs.org/docs/#polar-area-chart">Polar Area Chart</a>
+		</h4>
+		<ul class="section-sublinks">
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#polar-area-chart-introduction">Introduction</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#polar-area-chart-example-usage">Example usage</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#polar-area-chart-data-structure">Data structure</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#polar-area-chart-chart-options">Chart options</a></li>
+			
+		</ul>
+	</div>
+
+			
+				
+	<div class="sidebar-section">
+		<h4 class="section-link">
+			<a href="http://www.chartjs.org/docs/#doughnut-pie-chart">Pie &amp; Doughnut Charts</a>
+		</h4>
+		<ul class="section-sublinks">
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#doughnut-pie-chart-introduction">Introduction</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#doughnut-pie-chart-example-usage">Example usage</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#doughnut-pie-chart-data-structure">Data structure</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#doughnut-pie-chart-chart-options">Chart options</a></li>
+			
+		</ul>
+	</div>
+
+			
+				
+	<div class="sidebar-section">
+		<h4 class="section-link">
+			<a href="http://www.chartjs.org/docs/#scales">Scales</a>
+		</h4>
+		<ul class="section-sublinks">
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#scales-category-scale">Category Scale</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#scales-linear-scale">Linear Scale</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#scales-logarithmic-scale">Logarithmic Scale</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#scales-time-scale">Time Scale</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#scales-radial-linear-scale">Radial Linear Scale</a></li>
+			
+		</ul>
+	</div>
+
+			
+				
+	<div class="sidebar-section">
+		<h4 class="section-link">
+			<a href="http://www.chartjs.org/docs/#advanced-usage">Advanced usage</a>
+		</h4>
+		<ul class="section-sublinks">
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#advanced-usage-prototype-methods">Prototype methods</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#advanced-usage-external-tooltips">External Tooltips</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#advanced-usage-writing-new-scale-types">Writing new scale types</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#advanced-usage-writing-new-chart-types">Writing new chart types</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#advanced-usage-extending-existing-chart-types">Extending existing chart types</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#advanced-usage-creating-plugins">Creating Plugins</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#advanced-usage-building-chart-js">Building Chart.js</a></li>
+			
+		</ul>
+	</div>
+
+			
+				
+	<div class="sidebar-section">
+		<h4 class="section-link">
+			<a href="http://www.chartjs.org/docs/#notes">Notes</a>
+		</h4>
+		<ul class="section-sublinks">
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#notes-previous-versions">Previous versions</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#notes-browser-support">Browser support</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#notes-bugs-amp-issues">Bugs &amp; issues</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#notes-contributing">Contributing</a></li>
+			
+				<li>
+					<a href="http://www.chartjs.org/docs/#notes-license">License</a></li>
+			
+		</ul>
+	</div>
+
+			
+		</nav>
+
+		<div class="documentation-header">
+			<img class="chart-logo" src="./Chart.js _ Documentation_files/chartjs-logo.svg">
+			<div class="documentation-title-wrapper">
+				<h1 class="hero-title">Chart.js</h1>
+				<h2 class="hero-subtitle">API Documentation</h2>
+			</div>
+		</div>
+		<div class="documentation-body">
+			
+				
+	<section id="getting-started">
+		<h2 class="section-title">
+			<a class="fragment-link" href="http://www.chartjs.org/docs/#getting-started">Getting started</a>
+		</h2>
+		<div class="section-text">
+			<h3 id="getting-started-download-chart-js"><a class="fragment-link" href="http://www.chartjs.org/docs/#getting-started-download-chart-js">Download Chart.js</a></h3><p>To download a zip, go to <a href="https://github.com/nnnick/Chart.js" target="_blank">Chart.js on Github</a> and choose the version that is right for your application.</p>
+<ul>
+<li><a href="https://raw.githubusercontent.com/nnnick/Chart.js/v2.0-dev/dist/Chart.js" target="_blank">Standard build</a> (~31kB gzipped)</li>
+<li><a href="https://raw.githubusercontent.com/nnnick/Chart.js/v2.0-dev/dist/Chart.bundle.js" target="_blank">Bundled with Moment.js</a> (~45kB gzipped)</li>
+<li><a href="https://cdnjs.com/libraries/Chart.js" target="_blank">CDN Versions</a></li>
+</ul>
+<p>To install via npm / bower:</p>
+<pre><code class="lang-bash">npm install chart.js --save
+</code></pre>
+<pre><code class="lang-bash">bower install Chart.js --save
+</code></pre>
+<h3 id="getting-started-installation"><a class="fragment-link" href="http://www.chartjs.org/docs/#getting-started-installation">Installation</a></h3><p>To import Chart.js using an old-school script tag:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"Chart.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+    <span class="hljs-keyword">var</span> myChart = <span class="hljs-keyword">new</span> Chart({...})
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>To import Chart.js using an awesome module loader:</p>
+<pre><code class="lang-javascript">
+<span class="hljs-comment">// Using CommonJS</span>
+<span class="hljs-keyword">var</span> Chart = <span class="hljs-built_in">require</span>(<span class="hljs-string">'src/chart.js'</span>)
+<span class="hljs-keyword">var</span> myChart = <span class="hljs-keyword">new</span> Chart({...})
+
+<span class="hljs-comment">// ES6</span>
+<span class="hljs-keyword">import</span> Chart <span class="hljs-keyword">from</span> <span class="hljs-string">'src/chart.js'</span>
+<span class="hljs-keyword">let</span> myChart = <span class="hljs-keyword">new</span> Chart({...})
+
+<span class="hljs-comment">// Using requirejs</span>
+<span class="hljs-built_in">require</span>([<span class="hljs-string">'path/to/Chartjs'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">Chart</span>)</span>{
+ <span class="hljs-keyword">var</span> myChart = <span class="hljs-keyword">new</span> Chart({...})
+})
+</code></pre>
+<h3 id="getting-started-creating-a-chart"><a class="fragment-link" href="http://www.chartjs.org/docs/#getting-started-creating-a-chart">Creating a Chart</a></h3><p>To create a chart, we need to instantiate the <code>Chart</code> class. To do this, we need to pass in the node, jQuery instance, or 2d context of the canvas of where we want to draw the chart. Here's an example.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"myChart"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"400"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"400"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Any of the following formats may be used</span>
+<span class="hljs-keyword">var</span> ctx = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"myChart"</span>);
+<span class="hljs-keyword">var</span> ctx = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"myChart"</span>).getContext(<span class="hljs-string">"2d"</span>);
+<span class="hljs-keyword">var</span> ctx = $(<span class="hljs-string">"#myChart"</span>);
+</code></pre>
+<p>Once you have the element or context, you're ready to instantiate a pre-defined chart-type or create your own!</p>
+<p>The following example instantiates a bar chart showing the number of votes for different colors and the y-axis starting at 0.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"myChart"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"400"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"400"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">var</span> ctx = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"myChart"</span>);
+<span class="hljs-keyword">var</span> myChart = <span class="hljs-keyword">new</span> Chart(ctx, {
+    type: <span class="hljs-string">'bar'</span>,
+    data: {
+        labels: [<span class="hljs-string">"Red"</span>, <span class="hljs-string">"Blue"</span>, <span class="hljs-string">"Yellow"</span>, <span class="hljs-string">"Green"</span>, <span class="hljs-string">"Purple"</span>, <span class="hljs-string">"Orange"</span>],
+        datasets: [{
+            label: <span class="hljs-string">'# of Votes'</span>,
+            data: [<span class="hljs-number">12</span>, <span class="hljs-number">19</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:<span class="hljs-literal">true</span>
+                }
+            }]
+        }
+    }
+});
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>It's that easy to get started using Chart.js! From here you can explore the many options that can help you customise your charts with scales, tooltips, labels, colors, custom actions, and much more.</p>
+<h3 id="getting-started-global-chart-configuration"><a class="fragment-link" href="http://www.chartjs.org/docs/#getting-started-global-chart-configuration">Global chart configuration</a></h3><p>This concept was introduced in Chart.js 1.0 to keep configuration DRY, and allow for changing options globally across chart types, avoiding the need to specify options for each instance, or the default for a particular chart type.</p>
+<p>Chart.js merges configurations and options in a few places with the global defaults using chart type defaults and scales defaults. This way you can be as specific as you want in your individual chart configs, or change the defaults for Chart.js as a whole.</p>
+<p>The global options are defined in <code>Chart.defaults.global</code>.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>responsive</td>
+<td>Boolean</td>
+<td>true</td>
+<td>Resizes when the canvas container does.</td>
+</tr>
+<tr>
+<td>responsiveAnimationDuration</td>
+<td>Number</td>
+<td>0</td>
+<td>Duration in milliseconds it takes to animate to new size after a resize event.</td>
+</tr>
+<tr>
+<td>maintainAspectRatio</td>
+<td>Boolean</td>
+<td>true</td>
+<td>Maintain the original canvas aspect ratio <code>(width / height)</code> when resizing</td>
+</tr>
+<tr>
+<td>events</td>
+<td>Array[String]</td>
+<td><code>["mousemove", "mouseout", "click", "touchstart", "touchmove", "touchend"]</code></td>
+<td>Events that the chart should listen to for tooltips and hovering</td>
+</tr>
+<tr>
+<td>hover</td>
+<td>Object</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><em>hover</em>.onHover</td>
+<td>Function</td>
+<td>null</td>
+<td>Called when any of the events fire. Called in the context of the chart and passed an array of active elements (bars, points, etc)</td>
+</tr>
+<tr>
+<td><em>hover</em>.mode</td>
+<td>String</td>
+<td>'single'</td>
+<td>Sets which elements hover. Acceptable options are <code>'single'</code>, <code>'label'</code>, or <code>'dataset'</code>. <code>single</code> highlights the closest element. <code>label</code> highlights elements in all datasets at the same <code>X</code> value. <code>dataset</code> highlights the closest dataset.</td>
+</tr>
+<tr>
+<td><em>hover</em>.animationDuration</td>
+<td>Number</td>
+<td>400</td>
+<td>Duration in milliseconds it takes to animate hover style changes</td>
+</tr>
+<tr>
+<td>onClick</td>
+<td>Function</td>
+<td>null</td>
+<td>Called if the event is of type 'mouseup' or 'click'. Called in the context of the chart and passed an array of active elements</td>
+</tr>
+<tr>
+<td>defaultColor</td>
+<td>Color</td>
+<td>'rgba(0,0,0,0.1)'</td>
+<td></td>
+</tr>
+<tr>
+<td>defaultFontColor</td>
+<td>Color</td>
+<td>'#666'</td>
+<td>Default font color for all text</td>
+</tr>
+<tr>
+<td>defaultFontFamily</td>
+<td>String</td>
+<td>"'Helvetica Neue', 'Helvetica', 'Arial', sans-serif"</td>
+<td>Default font family for all text</td>
+</tr>
+<tr>
+<td>defaultFontSize</td>
+<td>Number</td>
+<td>12</td>
+<td>Default font size (in px) for text. Does not apply to radialLinear scale point labels</td>
+</tr>
+<tr>
+<td>defaultFontStyle</td>
+<td>String</td>
+<td>'normal'</td>
+<td>Default font style. Does not apply to tooltip title or footer. Does not apply to chart title</td>
+</tr>
+<tr>
+<td>legendCallback</td>
+<td>Function</td>
+<td><code>function (chart) { }</code></td>
+<td>Function to generate a legend. Receives the chart object to generate a legend from. Default implementation returns an HTML string.</td>
+</tr>
+</tbody>
+</table>
+</div><p>The global options for the chart title is defined in <code>Chart.defaults.global.title</code></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>display</td>
+<td>Boolean</td>
+<td>false</td>
+<td>Show the title block</td>
+</tr>
+<tr>
+<td>position</td>
+<td>String</td>
+<td>'top'</td>
+<td>Position of the title. 'top' or 'bottom' are allowed</td>
+</tr>
+<tr>
+<td>fullWidth</td>
+<td>Boolean</td>
+<td>true</td>
+<td>Marks that this box should take the full width of the canvas (pushing down other boxes)</td>
+</tr>
+<tr>
+<td>fontColor</td>
+<td>Color</td>
+<td>'#666'</td>
+<td>Text color</td>
+</tr>
+<tr>
+<td>fontFamily</td>
+<td>String</td>
+<td>'Helvetica Neue'</td>
+<td></td>
+</tr>
+<tr>
+<td>fontSize</td>
+<td>Number</td>
+<td>12</td>
+<td></td>
+</tr>
+<tr>
+<td>fontStyle</td>
+<td>String</td>
+<td>'bold'</td>
+<td></td>
+</tr>
+<tr>
+<td>padding</td>
+<td>Number</td>
+<td>10</td>
+<td>Number of pixels to add above and below the title text</td>
+</tr>
+<tr>
+<td>text</td>
+<td>String</td>
+<td>''</td>
+<td>Title text</td>
+</tr>
+</tbody>
+</table>
+</div><p>The global options for the chart legend is defined in <code>Chart.defaults.global.legend</code></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>display</td>
+<td>Boolean</td>
+<td>true</td>
+<td>Is the legend displayed</td>
+</tr>
+<tr>
+<td>position</td>
+<td>String</td>
+<td>'top'</td>
+<td>Position of the legend. Options are 'top' or 'bottom'</td>
+</tr>
+<tr>
+<td>fullWidth</td>
+<td>Boolean</td>
+<td>true</td>
+<td>Marks that this box should take the full width of the canvas (pushing down other boxes)</td>
+</tr>
+<tr>
+<td>onClick</td>
+<td>Function</td>
+<td><code>function(event, legendItem) {}</code></td>
+<td>A callback that is called when a click is registered on top of a label item</td>
+</tr>
+<tr>
+<td>labels</td>
+<td>Object</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><em>labels</em>.boxWidth</td>
+<td>Number</td>
+<td>40</td>
+<td>Width of coloured box</td>
+</tr>
+<tr>
+<td><em>labels</em>.fontSize</td>
+<td>Number</td>
+<td>12</td>
+<td>Font size</td>
+</tr>
+<tr>
+<td><em>labels</em>.fontStyle</td>
+<td>String</td>
+<td>"normal"</td>
+<td></td>
+</tr>
+<tr>
+<td><em>labels</em>.fontColor</td>
+<td>Color</td>
+<td>"#666"</td>
+<td></td>
+</tr>
+<tr>
+<td><em>labels</em>.fontFamily</td>
+<td>String</td>
+<td>"Helvetica Neue"</td>
+<td></td>
+</tr>
+<tr>
+<td><em>labels</em>.padding</td>
+<td>Number</td>
+<td>10</td>
+<td>Padding between rows of colored boxes</td>
+</tr>
+<tr>
+<td><em>labels</em>.generateLabels:</td>
+<td>Function</td>
+<td><code>function(data) {  }</code></td>
+<td>Generates legend items for each thing in the legend. Default implementation returns the text + styling for the color box. Styles that can be returned are <code>fillStyle</code>, <code>strokeStyle</code>, <code>lineCap</code>, <code>lineDash</code>, <code>lineDashOffset</code>, <code>lineWidth</code>, <code>lineJoin</code>. Return a <code>hidden</code> attribute to indicate that the label refers to something that is not visible. A strikethrough style will be given to the text in this case.</td>
+</tr>
+</tbody>
+</table>
+</div><p>The global options for tooltips are defined in <code>Chart.defaults.global.tooltips</code>.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align:center">Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>enabled</td>
+<td style="text-align:center">Boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>custom</td>
+<td style="text-align:center"></td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>mode</td>
+<td style="text-align:center">String</td>
+<td>'single'</td>
+<td>Sets which elements appear in the tooltip. Acceptable options are <code>'single'</code> or <code>'label'</code>. <code>single</code> highlights the closest element. <code>label</code> highlights elements in all datasets at the same <code>X</code> value.</td>
+</tr>
+<tr>
+<td>backgroundColor</td>
+<td style="text-align:center">Color</td>
+<td>'rgba(0,0,0,0.8)'</td>
+<td>Background color of the tooltip</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:center"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Label</td>
+<td style="text-align:center"></td>
+<td></td>
+<td>There are three labels you can control. <code>title</code>, <code>body</code>, <code>footer</code> the star (*) represents one of these three. <em>(i.e. titleFontFamily, footerSpacing)</em></td>
+</tr>
+<tr>
+<td>*FontFamily</td>
+<td style="text-align:center">String</td>
+<td>"'Helvetica Neue', 'Helvetica', 'Arial', sans-serif"</td>
+<td></td>
+</tr>
+<tr>
+<td>*FontSize</td>
+<td style="text-align:center">Number</td>
+<td>12</td>
+<td></td>
+</tr>
+<tr>
+<td>*FontStyle</td>
+<td style="text-align:center">String</td>
+<td>title - "bold", body - "normal", footer - "bold"</td>
+<td></td>
+</tr>
+<tr>
+<td>*Spacing</td>
+<td style="text-align:center">Number</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td>*Color</td>
+<td style="text-align:center">Color</td>
+<td>"#fff"</td>
+<td></td>
+</tr>
+<tr>
+<td>*Align</td>
+<td style="text-align:center">String</td>
+<td>"left"</td>
+<td>text alignment. See <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/textAlign" target="_blank">MDN Canvas Documentation</a></td>
+</tr>
+<tr>
+<td>titleMarginBottom</td>
+<td style="text-align:center">Number</td>
+<td>6</td>
+<td>Margin to add on bottom of title section</td>
+</tr>
+<tr>
+<td>footerMarginTop</td>
+<td style="text-align:center">Number</td>
+<td>6</td>
+<td>Margin to add before drawing the footer</td>
+</tr>
+<tr>
+<td>xPadding</td>
+<td style="text-align:center">Number</td>
+<td>6</td>
+<td>Padding to add on left and right of tooltip</td>
+</tr>
+<tr>
+<td>yPadding</td>
+<td style="text-align:center">Number</td>
+<td>6</td>
+<td>Padding to add on top and bottom of tooltip</td>
+</tr>
+<tr>
+<td>caretSize</td>
+<td style="text-align:center">Number</td>
+<td>5</td>
+<td>Size, in px, of the tooltip arrow</td>
+</tr>
+<tr>
+<td>cornerRadius</td>
+<td style="text-align:center">Number</td>
+<td>6</td>
+<td>Radius of tooltip corner curves</td>
+</tr>
+<tr>
+<td>multiKeyBackground</td>
+<td style="text-align:center">Color</td>
+<td>"#fff"</td>
+<td>Color to draw behind the colored boxes when multiple items are in the tooltip</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:center"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>callbacks</td>
+<td style="text-align:center">Object</td>
+<td>-</td>
+<td>V2.0 introduces callback functions as a replacement for the template engine in v1. The tooltip has the following callbacks for providing text. For all functions, 'this' will be the tooltip object create from the Chart.Tooltip constructor</td>
+</tr>
+<tr>
+<td><strong>Callback Functions</strong></td>
+<td style="text-align:center"></td>
+<td></td>
+<td>All functions are called with the same arguments</td>
+</tr>
+<tr>
+<td>xLabel</td>
+<td style="text-align:center">String or Array[Strings]</td>
+<td></td>
+<td>This is the xDataValue for each item to be displayed in the tooltip</td>
+</tr>
+<tr>
+<td>yLabel</td>
+<td style="text-align:center">String or Array[Strings]</td>
+<td></td>
+<td>This is the yDataValue for each item to be displayed in the tooltip</td>
+</tr>
+<tr>
+<td>index</td>
+<td style="text-align:center">Number</td>
+<td></td>
+<td>Data index.</td>
+</tr>
+<tr>
+<td>data</td>
+<td style="text-align:center">Object</td>
+<td></td>
+<td>Data object passed to chart.</td>
+</tr>
+<tr>
+<td><code>return</code></td>
+<td style="text-align:center">String or Array[Strings]</td>
+<td></td>
+<td>All functions must return either a string or an array of strings. Arrays of strings are treated as multiple lines of text.</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:center"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><em>callbacks</em>.beforeTitle</td>
+<td style="text-align:center">Function</td>
+<td>none</td>
+<td>Text to render before the title</td>
+</tr>
+<tr>
+<td><em>callbacks</em>.title</td>
+<td style="text-align:center">Function</td>
+<td><code>function(tooltipItems, data) { //Pick first xLabel }</code></td>
+<td>Text to render as the title</td>
+</tr>
+<tr>
+<td><em>callbacks</em>.afterTitle</td>
+<td style="text-align:center">Function</td>
+<td>none</td>
+<td>Text to render after the ttiel</td>
+</tr>
+<tr>
+<td><em>callbacks</em>.beforeBody</td>
+<td style="text-align:center">Function</td>
+<td>none</td>
+<td>Text to render before the body section</td>
+</tr>
+<tr>
+<td><em>callbacks</em>.beforeLabel</td>
+<td style="text-align:center">Function</td>
+<td>none</td>
+<td>Text to render before an individual label</td>
+</tr>
+<tr>
+<td><em>callbacks</em>.label</td>
+<td style="text-align:center">Function</td>
+<td><code>function(tooltipItem, data) { // Returns "datasetLabel: tooltipItem.yLabel" }</code></td>
+<td>Text to render as label</td>
+</tr>
+<tr>
+<td><em>callbacks</em>.afterLabel</td>
+<td style="text-align:center">Function</td>
+<td>none</td>
+<td>Text to render after an individual label</td>
+</tr>
+<tr>
+<td><em>callbacks</em>.afterBody</td>
+<td style="text-align:center">Function</td>
+<td>none</td>
+<td>Text to render after the body section</td>
+</tr>
+<tr>
+<td><em>callbacks</em>.beforeFooter</td>
+<td style="text-align:center">Function</td>
+<td>none</td>
+<td>Text to render before the footer section</td>
+</tr>
+<tr>
+<td><em>callbacks</em>.footer</td>
+<td style="text-align:center">Function</td>
+<td>none</td>
+<td>Text to render as the footer</td>
+</tr>
+<tr>
+<td><em>callbacks</em>.afterFooter</td>
+<td style="text-align:center">Function</td>
+<td>none</td>
+<td>Text to render after the footer section</td>
+</tr>
+</tbody>
+</table>
+</div><p>The global options for animations are defined in <code>Chart.defaults.global.animation</code>.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align:center">Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>duration</td>
+<td style="text-align:center">Number</td>
+<td>1000</td>
+<td>The number of milliseconds an animation takes.</td>
+</tr>
+<tr>
+<td>easing</td>
+<td style="text-align:center">String</td>
+<td>"easeOutQuart"</td>
+<td>Easing function to use.</td>
+</tr>
+<tr>
+<td>onProgress</td>
+<td style="text-align:center">Function</td>
+<td>none</td>
+<td>Callback called on each step of an animation. Passed a single argument, an object, containing the chart instance and an object with details of the animation.</td>
+</tr>
+<tr>
+<td>onComplete</td>
+<td style="text-align:center">Function</td>
+<td>none</td>
+<td>Callback called at the end of an animation. Passed the same arguments as <code>onProgress</code></td>
+</tr>
+</tbody>
+</table>
+</div><p>The global options for elements are defined in <code>Chart.defaults.global.elements</code>.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align:center">Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arc</td>
+<td style="text-align:center">Object</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><em>arc</em>.backgroundColor</td>
+<td style="text-align:center">Color</td>
+<td><code>Chart.defaults.global.defaultColor</code></td>
+<td>Default fill color for arcs</td>
+</tr>
+<tr>
+<td><em>arc</em>.borderColor</td>
+<td style="text-align:center">Color</td>
+<td>"#fff"</td>
+<td>Default stroke color for arcs</td>
+</tr>
+<tr>
+<td><em>arc</em>.borderWidth</td>
+<td style="text-align:center">Number</td>
+<td>2</td>
+<td>Default stroke width for arcs</td>
+</tr>
+<tr>
+<td>line</td>
+<td style="text-align:center">Object</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><em>line</em>.lineTension</td>
+<td style="text-align:center">Number</td>
+<td>0.4</td>
+<td>Default bezier curve tension. Set to <code>0</code> for no bezier curves.</td>
+</tr>
+<tr>
+<td><em>line</em>.backgroundColor</td>
+<td style="text-align:center">Color</td>
+<td><code>Chart.defaults.global.defaultColor</code></td>
+<td>Default line fill color</td>
+</tr>
+<tr>
+<td><em>line</em>.borderWidth</td>
+<td style="text-align:center">Number</td>
+<td>3</td>
+<td>Default line stroke width</td>
+</tr>
+<tr>
+<td><em>line</em>.borderColor</td>
+<td style="text-align:center">Color</td>
+<td><code>Chart.defaults.global.defaultColor</code></td>
+<td>Default line stroke color</td>
+</tr>
+<tr>
+<td><em>line</em>.borderCapStyle</td>
+<td style="text-align:center">String</td>
+<td>'butt'</td>
+<td>Default line cap style. See <a href="https://developer.mozilla.org/en/docs/Web/API/CanvasRenderingContext2D/lineCap" target="_blank">MDN</a></td>
+</tr>
+<tr>
+<td><em>line</em>.borderDash</td>
+<td style="text-align:center">Array</td>
+<td><code>[]</code></td>
+<td>Default line dash. See <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/setLineDash" target="_blank">MDN</a></td>
+</tr>
+<tr>
+<td><em>line</em>.borderDashOffset</td>
+<td style="text-align:center">Number</td>
+<td>0.0</td>
+<td>Default line dash offset. See <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineDashOffset" target="_blank">MDN</a></td>
+</tr>
+<tr>
+<td><em>line</em>.borderJoinStyle</td>
+<td style="text-align:center">String</td>
+<td>'miter'</td>
+<td>Default line join style. See <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineJoin" target="_blank">MDN</a></td>
+</tr>
+<tr>
+<td><em>line</em>.fill</td>
+<td style="text-align:center">Boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>point</td>
+<td style="text-align:center">Object</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><em>point</em>.radius</td>
+<td style="text-align:center">Number</td>
+<td>3</td>
+<td>Default point radius</td>
+</tr>
+<tr>
+<td><em>point</em>.pointStyle</td>
+<td style="text-align:center">String</td>
+<td>'circle'</td>
+<td>Default point style</td>
+</tr>
+<tr>
+<td><em>point</em>.backgroundColor</td>
+<td style="text-align:center">Color</td>
+<td><code>Chart.defaults.global.defaultColor</code></td>
+<td>Default point fill color</td>
+</tr>
+<tr>
+<td><em>point</em>.borderWidth</td>
+<td style="text-align:center">Number</td>
+<td>1</td>
+<td>Default point stroke width</td>
+</tr>
+<tr>
+<td><em>point</em>.borderColor</td>
+<td style="text-align:center">Color</td>
+<td><code>Chart.defaults.global.defaultColor</code></td>
+<td>Default point stroke color</td>
+</tr>
+<tr>
+<td><em>point</em>.hitRadius</td>
+<td style="text-align:center">Number</td>
+<td>1</td>
+<td>Extra radius added to point radius for hit detection</td>
+</tr>
+<tr>
+<td><em>point</em>.hoverRadius</td>
+<td style="text-align:center">Number</td>
+<td>4</td>
+<td>Default point radius when hovered</td>
+</tr>
+<tr>
+<td><em>point</em>.hoverBorderWidth</td>
+<td style="text-align:center">Number</td>
+<td>1</td>
+<td>Default stroke width when hovered</td>
+</tr>
+<tr>
+<td>rectangle</td>
+<td style="text-align:center">Object</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><em>rectangle</em>.backgroundColor</td>
+<td style="text-align:center">Color</td>
+<td><code>Chart.defaults.global.defaultColor</code></td>
+<td>Default bar fill color</td>
+</tr>
+<tr>
+<td><em>rectangle</em>.borderWidth</td>
+<td style="text-align:center">Number</td>
+<td>0</td>
+<td>Default bar stroke width</td>
+</tr>
+<tr>
+<td><em>rectangle</em>.borderColor</td>
+<td style="text-align:center">Color</td>
+<td><code>Chart.defaults.global.defaultColor</code></td>
+<td>Default bar stroke color</td>
+</tr>
+<tr>
+<td><em>rectangle</em>.borderSkipped</td>
+<td style="text-align:center">String</td>
+<td>'bottom'</td>
+<td>Default skipped (excluded) border for rectangle. Can be one of <code>bottom</code>, <code>left</code>, <code>top</code>, <code>right</code></td>
+</tr>
+</tbody>
+</table>
+</div><p>If for example, you wanted all charts created to be responsive, and resize when the browser window does, the following setting can be changed:</p>
+<pre><code class="lang-javascript">Chart.defaults.global.responsive = <span class="hljs-literal">true</span>;
+</code></pre>
+<p>Now, every time we create a chart, <code>options.responsive</code> will be <code>true</code>.</p>
+<h3 id="getting-started-colors"><a class="fragment-link" href="http://www.chartjs.org/docs/#getting-started-colors">Colors</a></h3><p>When supplying colors to Chart options, you can use a number of formats. You can specify the color as a string in hexadecimal, RGB, or HSL notations. </p>
+<p>You can also pass a <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasGradient" target="_blank">CanvasGradient</a> object. You will need to create this before passing to the chart, but using it you can achieve some interesting effects.</p>
+<p>The final option is to pass a <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasPattern" target="_blank">CanvasPattern</a> object. For example, if you wanted to fill a dataset with a pattern from an image you could do the following.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> img = <span class="hljs-keyword">new</span> Image();
+img.src = <span class="hljs-string">'https://example.com/my_image.png'</span>;
+img.onload = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> ctx = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'canvas'</span>).getContext(<span class="hljs-string">'2d'</span>);
+    <span class="hljs-keyword">var</span> fillPattern = ctx.CreatePattern(img, <span class="hljs-string">'repeat'</span>);
+
+    <span class="hljs-keyword">var</span> chart = <span class="hljs-keyword">new</span> Chart(ctx, {
+        data: {
+            labels: [<span class="hljs-string">'Item 1'</span>, <span class="hljs-string">'Item 2'</span>, <span class="hljs-string">'Item 3'</span>],
+            datasets: [{
+                data: [<span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">30</span>],
+                backgroundColor: fillPattern
+            }]
+        }
+    })
+}
+</code></pre>
+
+		</div>
+	</section>
+
+			
+				
+	<section id="line-chart">
+		<h2 class="section-title">
+			<a class="fragment-link" href="http://www.chartjs.org/docs/#line-chart">Line Chart</a>
+		</h2>
+		<div class="section-text">
+			<h3 id="line-chart-introduction"><a class="fragment-link" href="http://www.chartjs.org/docs/#line-chart-introduction">Introduction</a></h3><p>A line chart is a way of plotting data points on a line.</p>
+<p>Often, it is used to show trend data, and the comparison of two data sets.</p>
+<div class="canvas-holder"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;" src="./Chart.js _ Documentation_files/saved_resource.html"></iframe>
+    <canvas width="1080" height="540" style="width: 1080px; height: 540px;"></canvas>
+</div>
+
+<h3 id="line-chart-example-usage"><a class="fragment-link" href="http://www.chartjs.org/docs/#line-chart-example-usage">Example usage</a></h3><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myLineChart = <span class="hljs-keyword">new</span> Chart(ctx, {
+    type: <span class="hljs-string">'line'</span>,
+    data: data,
+    options: options
+});
+</code></pre>
+<p>Alternatively a line chart can be created using syntax similar to the v1.0 syntax</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myLineChart = Chart.Line(ctx, {
+    data: data,
+    options: options
+});
+</code></pre>
+<h3 id="line-chart-data-structure"><a class="fragment-link" href="http://www.chartjs.org/docs/#line-chart-data-structure">Data structure</a></h3><p>The following options can be included in a line chart dataset to configure options for that specific dataset.</p>
+<p>All point* properties can be specified as an array. If these are set to an array value, the first value applies to the first point, the second value to the second point, and so on.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td><code>Array&lt;Number&gt;</code></td>
+<td>The data to plot in a line</td>
+</tr>
+<tr>
+<td>label</td>
+<td><code>String</code></td>
+<td>The label for the dataset which appears in the legend and tooltips</td>
+</tr>
+<tr>
+<td>xAxisID</td>
+<td><code>String</code></td>
+<td>The ID of the x axis to plot this dataset on</td>
+</tr>
+<tr>
+<td>yAxisID</td>
+<td><code>String</code></td>
+<td>The ID of the y axis to plot this dataset on</td>
+</tr>
+<tr>
+<td>fill</td>
+<td><code>Boolean</code></td>
+<td>If true, fill the area under the line</td>
+</tr>
+<tr>
+<td>lineTension</td>
+<td><code>Number</code></td>
+<td>Bezier curve tension of the line. Set to 0 to draw straightlines. <em>Note</em> This was renamed from 'tension' but the old name still works.</td>
+</tr>
+<tr>
+<td>backgroundColor</td>
+<td><code>Color</code></td>
+<td>The fill color under the line. See <a href="http://www.chartjs.org/docs/#colors">Colors</a></td>
+</tr>
+<tr>
+<td>borderWidth</td>
+<td><code>Number</code></td>
+<td>The width of the line in pixels</td>
+</tr>
+<tr>
+<td>borderColor</td>
+<td><code>Color</code></td>
+<td>The color of the line.</td>
+</tr>
+<tr>
+<td>borderCapStyle</td>
+<td><code>String</code></td>
+<td>Cap style of the line. See <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineCap" target="_blank">MDN</a></td>
+</tr>
+<tr>
+<td>borderDash</td>
+<td><code>Array&lt;Number&gt;</code></td>
+<td>Length and spacing of dashes. See <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/setLineDash" target="_blank">MDN</a></td>
+</tr>
+<tr>
+<td>borderDashOffset</td>
+<td><code>Number</code></td>
+<td>Offset for line dashes. See <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineDashOffset" target="_blank">MDN</a></td>
+</tr>
+<tr>
+<td>borderJoinStyle</td>
+<td><code>String</code></td>
+<td>Line joint style. See <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineJoin" target="_blank">MDN</a></td>
+</tr>
+<tr>
+<td>pointBorderColor</td>
+<td><code>Color or Array&lt;Color&gt;</code></td>
+<td>The border color for points.</td>
+</tr>
+<tr>
+<td>pointBackgroundColor</td>
+<td><code>Color or Array&lt;Color&gt;</code></td>
+<td>The fill color for points</td>
+</tr>
+<tr>
+<td>pointBorderWidth</td>
+<td><code>Number or Array&lt;Number&gt;</code></td>
+<td>The width of the point border in pixels</td>
+</tr>
+<tr>
+<td>pointRadius</td>
+<td><code>Number or Array&lt;Number&gt;</code></td>
+<td>The radius of the point shape. If set to 0, nothing is rendered. </td>
+</tr>
+<tr>
+<td>pointHoverRadius</td>
+<td><code>Number or Array&lt;Number&gt;</code></td>
+<td>The radius of the point when hovered</td>
+</tr>
+<tr>
+<td>pointHitRadius</td>
+<td><code>Number or Array&lt;Number&gt;</code></td>
+<td>The pixel size of the non-displayed point that reacts to mouse events</td>
+</tr>
+<tr>
+<td>pointHoverBackgroundColor</td>
+<td><code>Color or Array&lt;Color&gt;</code></td>
+<td>Point background color when hovered</td>
+</tr>
+<tr>
+<td>pointHoverBorderColor</td>
+<td><code>Color or Array&lt;Color&gt;</code></td>
+<td>Point border color when hovered</td>
+</tr>
+<tr>
+<td>pointHoverBorderWidth</td>
+<td><code>Number or Array&lt;Number&gt;</code></td>
+<td>Border width of point when hovered</td>
+</tr>
+<tr>
+<td>pointStyle</td>
+<td><code>String or Array&lt;String&gt;</code></td>
+<td>The style of point. Options include 'circle', 'triangle', 'rect', 'rectRot', 'cross', 'crossRot', 'star', 'line', and 'dash'</td>
+</tr>
+</tbody>
+</table>
+</div><p>An example data object using these attributes is shown below.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> data = {
+    labels: [<span class="hljs-string">"January"</span>, <span class="hljs-string">"February"</span>, <span class="hljs-string">"March"</span>, <span class="hljs-string">"April"</span>, <span class="hljs-string">"May"</span>, <span class="hljs-string">"June"</span>, <span class="hljs-string">"July"</span>],
+    datasets: [
+        {
+            label: <span class="hljs-string">"My First dataset"</span>,
+            fill: <span class="hljs-literal">false</span>,
+            lineTension: <span class="hljs-number">0.1</span>,
+            backgroundColor: <span class="hljs-string">"rgba(75,192,192,0.4)"</span>,
+            borderColor: <span class="hljs-string">"rgba(75,192,192,1)"</span>,
+            borderCapStyle: <span class="hljs-string">'butt'</span>,
+            borderDash: [],
+            borderDashOffset: <span class="hljs-number">0.0</span>,
+            borderJoinStyle: <span class="hljs-string">'miter'</span>,
+            pointBorderColor: <span class="hljs-string">"rgba(75,192,192,1)"</span>,
+            pointBackgroundColor: <span class="hljs-string">"#fff"</span>,
+            pointBorderWidth: <span class="hljs-number">1</span>,
+            pointHoverRadius: <span class="hljs-number">5</span>,
+            pointHoverBackgroundColor: <span class="hljs-string">"rgba(75,192,192,1)"</span>,
+            pointHoverBorderColor: <span class="hljs-string">"rgba(220,220,220,1)"</span>,
+            pointHoverBorderWidth: <span class="hljs-number">2</span>,
+            pointRadius: <span class="hljs-number">1</span>,
+            pointHitRadius: <span class="hljs-number">10</span>,
+            data: [<span class="hljs-number">65</span>, <span class="hljs-number">59</span>, <span class="hljs-number">80</span>, <span class="hljs-number">81</span>, <span class="hljs-number">56</span>, <span class="hljs-number">55</span>, <span class="hljs-number">40</span>],
+        }
+    ]
+};
+</code></pre>
+<p>The line chart requires an array of labels. This labels are shown on the X axis. There must be one label for each data point. More labels than datapoints are allowed, in which case the line ends at the last data point.
+The data for line charts is broken up into an array of datasets. Each dataset has a colour for the fill, a colour for the line and colours for the points and strokes of the points. These colours are strings just like CSS. You can use RGBA, RGB, HEX or HSL notation.</p>
+<p>The label key on each dataset is optional, and can be used when generating a scale for the chart.</p>
+<h3 id="line-chart-chart-options"><a class="fragment-link" href="http://www.chartjs.org/docs/#line-chart-chart-options">Chart options</a></h3><p>These are the customisation options specific to Line charts. These options are merged with the <a href="http://www.chartjs.org/docs/#getting-started-global-chart-configuration">global chart configuration options</a>, and form the options of the chart.</p>
+<p>The default options for line chart are defined in <code>Chart.defaults.line</code>.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>showLines</td>
+<td>Boolean</td>
+<td>true</td>
+<td>If false, the lines between points are not drawn</td>
+</tr>
+<tr>
+<td>stacked</td>
+<td>Boolean</td>
+<td>false</td>
+<td>If true, lines stack on top of each other along the y axis.</td>
+</tr>
+<tr>
+<td><em>hover</em>.mode</td>
+<td>String</td>
+<td>"label"</td>
+<td>Label's hover mode. "label" is used since the x axis displays data by the index in the dataset.</td>
+</tr>
+<tr>
+<td>elements</td>
+<td>Object</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><em>elements</em>.point</td>
+<td>Object</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><em>elements.point</em>.radius</td>
+<td>Number</td>
+<td><code>3</code></td>
+<td>Defines the size of the Point shape. Can be set to zero to skip rendering a point.</td>
+</tr>
+<tr>
+<td>scales</td>
+<td>Object</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><em>scales</em>.xAxes</td>
+<td>Array</td>
+<td><code>[{type:"category","id":"x-axis-0"}]</code></td>
+<td>Defines all of the x axes used in the chart. See the <a href="http://www.chartjs.org/docs/#getting-started-scales">scale documentation</a> for details on the available options.</td>
+</tr>
+<tr>
+<td><em>Options for xAxes</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>String</td>
+<td>"category"</td>
+<td>As defined in <a href="http://www.chartjs.org/docs/#scales-category-scale">"Category"</a>.</td>
+</tr>
+<tr>
+<td>id</td>
+<td>String</td>
+<td>"x-axis-0"</td>
+<td>Id of the axis so that data can bind to it.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td> <em>scales</em>.yAxes</td>
+<td>Array</td>
+<td><code>[{type:"linear","id":"y-axis-0"}]</code></td>
+<td>Defines all of the y axes used in the chart. See the <a href="http://www.chartjs.org/docs/#getting-started-scales">scale documentation</a> for details on the available options.</td>
+</tr>
+<tr>
+<td> <em>Options for yAxes</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td> type</td>
+<td>String</td>
+<td>"linear"</td>
+<td>As defined in <a href="http://www.chartjs.org/docs/#scales-linear-scale">"Linear"</a>.</td>
+</tr>
+<tr>
+<td> id</td>
+<td>String</td>
+<td>"y-axis-0"</td>
+<td>Id of the axis so that data can bind to it.</td>
+</tr>
+</tbody>
+</table>
+</div><p>You can override these for your <code>Chart</code> instance by passing a member <code>options</code> into the <code>Line</code> method.</p>
+<p>For example, we could have a line chart display without an x axis by doing the following. The config merge is smart enough to handle arrays so that you do not need to specify all axis settings to change one thing.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">new</span> Chart(ctx, {
+    type: <span class="hljs-string">'line'</span>,
+    data: data,
+    options: {
+        xAxes: [{
+            display: <span class="hljs-literal">false</span>
+        }]
+    }
+});
+<span class="hljs-comment">// This will create a chart with all of the default options, merged from the global config,</span>
+<span class="hljs-comment">// and the Line chart defaults, but this particular instance will have the x axis not displaying.</span>
+</code></pre>
+<p>We can also change these defaults values for each Line type that is created, this object is available at <code>Chart.defaults.line</code>.</p>
+
+		</div>
+	</section>
+
+			
+				
+	<section id="bar-chart">
+		<h2 class="section-title">
+			<a class="fragment-link" href="http://www.chartjs.org/docs/#bar-chart">Bar Chart</a>
+		</h2>
+		<div class="section-text">
+			<h3 id="bar-chart-introduction"><a class="fragment-link" href="http://www.chartjs.org/docs/#bar-chart-introduction">Introduction</a></h3><p>A bar chart is a way of showing data as bars.</p>
+<p>It is sometimes used to show trend data, and the comparison of multiple data sets side by side.</p>
+<div class="canvas-holder"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;" src="./Chart.js _ Documentation_files/saved_resource(1).html"></iframe>
+    <canvas width="1080" height="540" style="width: 1080px; height: 540px;"></canvas>
+</div>
+
+<h3 id="bar-chart-example-usage"><a class="fragment-link" href="http://www.chartjs.org/docs/#bar-chart-example-usage">Example usage</a></h3><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myBarChart = <span class="hljs-keyword">new</span> Chart(ctx, {
+    type: <span class="hljs-string">'bar'</span>,
+    data: data,
+    options: options
+});
+</code></pre>
+<h3 id="bar-chart-data-structure"><a class="fragment-link" href="http://www.chartjs.org/docs/#bar-chart-data-structure">Data structure</a></h3><p>The following options can be included in a bar chart dataset to configure options for that specific dataset.</p>
+<p>Some properties can be specified as an array. If these are set to an array value, the first value applies to the first bar, the second value to the second bar, and so on.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td><code>Array&lt;Number&gt;</code></td>
+<td>The data to plot as bars</td>
+</tr>
+<tr>
+<td>label</td>
+<td><code>String</code></td>
+<td>The label for the dataset which appears in the legend and tooltips</td>
+</tr>
+<tr>
+<td>xAxisID</td>
+<td><code>String</code></td>
+<td>The ID of the x axis to plot this dataset on</td>
+</tr>
+<tr>
+<td>yAxisID</td>
+<td><code>String</code></td>
+<td>The ID of the y axis to plot this dataset on</td>
+</tr>
+<tr>
+<td>backgroundColor</td>
+<td><code>Color or Array&lt;Color&gt;</code></td>
+<td>The fill color of the bars. See <a href="http://www.chartjs.org/docs/#colors">Colors</a></td>
+</tr>
+<tr>
+<td>borderColor</td>
+<td><code>Color or Array&lt;Color&gt;</code></td>
+<td>Bar border color</td>
+</tr>
+<tr>
+<td>borderWidth</td>
+<td><code>Number or Array&lt;Number&gt;</code></td>
+<td>Border width of bar in pixels</td>
+</tr>
+<tr>
+<td>borderSkipped</td>
+<td><code>String or Array&lt;String&gt;</code></td>
+<td>Which edge to skip drawing the border for. Options are 'bottom', 'left', 'top', and 'right'</td>
+</tr>
+<tr>
+<td>hoverBackgroundColor</td>
+<td><code>Color or Array&lt;Color&gt;</code></td>
+<td>Bar background color when hovered</td>
+</tr>
+<tr>
+<td>hoverBorderColor</td>
+<td><code>Color or Array&lt;Color&gt;</code></td>
+<td>Bar border color when hovered</td>
+</tr>
+<tr>
+<td>hoverBorderWidth</td>
+<td><code>Number or Array&lt;Number&gt;</code></td>
+<td>Border width of bar when hovered</td>
+</tr>
+</tbody>
+</table>
+</div><p>An example data object using these attributes is shown below.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> data = {
+    labels: [<span class="hljs-string">"January"</span>, <span class="hljs-string">"February"</span>, <span class="hljs-string">"March"</span>, <span class="hljs-string">"April"</span>, <span class="hljs-string">"May"</span>, <span class="hljs-string">"June"</span>, <span class="hljs-string">"July"</span>],
+    datasets: [
+        {
+            label: <span class="hljs-string">"My First dataset"</span>,
+            backgroundColor: <span class="hljs-string">"rgba(255,99,132,0.2)"</span>,
+            borderColor: <span class="hljs-string">"rgba(255,99,132,1)"</span>,
+            borderWidth: <span class="hljs-number">1</span>,
+            hoverBackgroundColor: <span class="hljs-string">"rgba(255,99,132,0.4)"</span>,
+            hoverBorderColor: <span class="hljs-string">"rgba(255,99,132,1)"</span>,
+            data: [<span class="hljs-number">65</span>, <span class="hljs-number">59</span>, <span class="hljs-number">80</span>, <span class="hljs-number">81</span>, <span class="hljs-number">56</span>, <span class="hljs-number">55</span>, <span class="hljs-number">40</span>],
+        }
+    ]
+};
+</code></pre>
+<p>The bar chart has the a very similar data structure to the line chart, and has an array of datasets, each with colours and an array of data.
+We have an array of labels too for display. In the example, we are showing the same data as the previous line chart example.</p>
+<h3 id="bar-chart-chart-options"><a class="fragment-link" href="http://www.chartjs.org/docs/#bar-chart-chart-options">Chart Options</a></h3><p>These are the customisation options specific to Bar charts. These options are merged with the <a href="http://www.chartjs.org/docs/#getting-started-global-chart-configuration">global chart configuration options</a>, and form the options of the chart.</p>
+<p>The default options for bar chart are defined in <code>Chart.defaults.bar</code>.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align:center">Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>stacked</td>
+<td style="text-align:center">Boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td><em>hover</em>.mode</td>
+<td style="text-align:center">String</td>
+<td>"label"</td>
+<td>Label's hover mode. "label" is used since the x axis displays data by the index in the dataset.</td>
+</tr>
+<tr>
+<td>scales</td>
+<td style="text-align:center">Object</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><em>scales</em>.xAxes</td>
+<td style="text-align:center">Array</td>
+<td></td>
+<td>The bar chart officially supports only 1 x-axis but uses an array to keep the API consistent. Use a scatter chart if you need multiple x axes.</td>
+</tr>
+<tr>
+<td><em>Options for xAxes</em></td>
+<td style="text-align:center"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td style="text-align:center">String</td>
+<td>"Category"</td>
+<td>As defined in <a href="http://www.chartjs.org/docs/#scales-category-scale">Scales</a>.</td>
+</tr>
+<tr>
+<td>display</td>
+<td style="text-align:center">Boolean</td>
+<td>true</td>
+<td>If true, show the scale.</td>
+</tr>
+<tr>
+<td>id</td>
+<td style="text-align:center">String</td>
+<td>"x-axis-1"</td>
+<td>Id of the axis so that data can bind to it</td>
+</tr>
+<tr>
+<td>categoryPercentage</td>
+<td style="text-align:center">Number</td>
+<td>0.8</td>
+<td>Percent (0-1) of the available width (the space between the gridlines for small datasets) for each data-point to use for the bars. <a href="http://www.chartjs.org/docs/#bar-chart-barpercentage-vs-categorypercentage">Read More</a></td>
+</tr>
+<tr>
+<td>barPercentage</td>
+<td style="text-align:center">Number</td>
+<td>0.9</td>
+<td>Percent (0-1) of the available width each bar should be within the category percentage. 1.0 will take the whole category width and put the bars right next to each other. <a href="http://www.chartjs.org/docs/#bar-chart-barpercentage-vs-categorypercentage">Read More</a></td>
+</tr>
+<tr>
+<td>gridLines</td>
+<td style="text-align:center">Object</td>
+<td><a href="http://www.chartjs.org/docs/#scales">See Scales</a></td>
+<td></td>
+</tr>
+<tr>
+<td><em>gridLines</em>.offsetGridLines</td>
+<td style="text-align:center">Boolean</td>
+<td>true</td>
+<td>If true, the bars for a particular data point fall between the grid lines. If false, the grid line will go right down the middle of the bars.</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:center"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><em>scales</em>.yAxes</td>
+<td style="text-align:center">Array</td>
+<td><code>[{ type: "linear" }]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><em>Options for xAxes</em></td>
+<td style="text-align:center"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td style="text-align:center">String</td>
+<td>"linear"</td>
+<td>As defined in <a href="http://www.chartjs.org/docs/#scales-linear-scale">Scales</a>.</td>
+</tr>
+<tr>
+<td>display</td>
+<td style="text-align:center">Boolean</td>
+<td>true</td>
+<td>If true, show the scale.</td>
+</tr>
+<tr>
+<td>id</td>
+<td style="text-align:center">String</td>
+<td>"y-axis-1"</td>
+<td>Id of the axis so that data can bind to it.</td>
+</tr>
+</tbody>
+</table>
+</div><p>You can override these for your <code>Chart</code> instance by passing a second argument into the <code>Bar</code> method as an object with the keys you want to override.</p>
+<p>For example, we could have a bar chart without a stroke on each bar by doing the following:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">new</span> Chart(ctx, {
+    type: <span class="hljs-string">"bar"</span>,
+    data: data,
+    options: {
+        scales: {
+                xAxes: [{
+                        stacked: <span class="hljs-literal">true</span>
+                }],
+                yAxes: [{
+                        stacked: <span class="hljs-literal">true</span>
+                }]
+            }
+        }
+    }
+});
+<span class="hljs-comment">// This will create a chart with all of the default options, merged from the global config,</span>
+<span class="hljs-comment">//  and the Bar chart defaults but this particular instance will have `stacked` set to true</span>
+<span class="hljs-comment">// for both x and y axes.</span>
+</code></pre>
+<p>We can also change these defaults values for each Bar type that is created, this object is available at <code>Chart.defaults.bar</code>.</p>
+<h4>barPercentage vs categoryPercentage</h4><p>The following shows the relationship between the bar percentage option and the category percentage option.</p>
+<pre><code class="lang-text">// categoryPercentage: 1.0
+// barPercentage: 1.0
+Bar:        | 1.0 | 1.0 |
+Category:   |    1.0    |   
+Sample:     |===========|
+
+// categoryPercentage: 1.0
+// barPercentage: 0.5
+Bar:          |.5|  |.5|
+Category:  |      1.0     |   
+Sample:    |==============|
+
+// categoryPercentage: 0.5
+// barPercentage: 1.0
+Bar:            |1.||1.|
+Category:       |  .5  |   
+Sample:     |==============|
+</code></pre>
+
+		</div>
+	</section>
+
+			
+				
+	<section id="radar-chart">
+		<h2 class="section-title">
+			<a class="fragment-link" href="http://www.chartjs.org/docs/#radar-chart">Radar Chart</a>
+		</h2>
+		<div class="section-text">
+			<h3 id="radar-chart-introduction"><a class="fragment-link" href="http://www.chartjs.org/docs/#radar-chart-introduction">Introduction</a></h3><p>A radar chart is a way of showing multiple data points and the variation between them.</p>
+<p>They are often useful for comparing the points of two or more different data sets.</p>
+<div class="canvas-holder"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;" src="./Chart.js _ Documentation_files/saved_resource(2).html"></iframe>
+    <canvas width="1080" height="540" style="width: 1080px; height: 540px;"></canvas>
+</div>
+
+<h3 id="radar-chart-example-usage"><a class="fragment-link" href="http://www.chartjs.org/docs/#radar-chart-example-usage">Example usage</a></h3><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myRadarChart = <span class="hljs-keyword">new</span> Chart(ctx, {
+    type: <span class="hljs-string">'radar'</span>,
+    data: data,
+    options: options
+});
+</code></pre>
+<h3 id="radar-chart-data-structure"><a class="fragment-link" href="http://www.chartjs.org/docs/#radar-chart-data-structure">Data structure</a></h3><p>The following options can be included in a radar chart dataset to configure options for that specific dataset.</p>
+<p>All point* properties can be specified as an array. If these are set to an array value, the first value applies to the first point, the second value to the second point, and so on.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td><code>Array&lt;Number&gt;</code></td>
+<td>The data to plot in a line</td>
+</tr>
+<tr>
+<td>label</td>
+<td><code>String</code></td>
+<td>The label for the dataset which appears in the legend and tooltips</td>
+</tr>
+<tr>
+<td>fill</td>
+<td><code>Boolean</code></td>
+<td>If true, fill the area under the line</td>
+</tr>
+<tr>
+<td>lineTension</td>
+<td><code>Number</code></td>
+<td>Bezier curve tension of the line. Set to 0 to draw straightlines. <em>Note</em> This was renamed from 'tension' but the old name still works.</td>
+</tr>
+<tr>
+<td>backgroundColor</td>
+<td><code>Color</code></td>
+<td>The fill color under the line. See <a href="http://www.chartjs.org/docs/#colors">Colors</a></td>
+</tr>
+<tr>
+<td>borderWidth</td>
+<td><code>Number</code></td>
+<td>The width of the line in pixels</td>
+</tr>
+<tr>
+<td>borderColor</td>
+<td><code>Color</code></td>
+<td>The color of the line.</td>
+</tr>
+<tr>
+<td>borderCapStyle</td>
+<td><code>String</code></td>
+<td>Cap style of the line. See <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineCap" target="_blank">MDN</a></td>
+</tr>
+<tr>
+<td>borderDash</td>
+<td><code>Array&lt;Number&gt;</code></td>
+<td>Length and spacing of dashes. See <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/setLineDash" target="_blank">MDN</a></td>
+</tr>
+<tr>
+<td>borderDashOffset</td>
+<td><code>Number</code></td>
+<td>Offset for line dashes. See <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineDashOffset" target="_blank">MDN</a></td>
+</tr>
+<tr>
+<td>borderJoinStyle</td>
+<td><code>String</code></td>
+<td>Line joint style. See <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineJoin" target="_blank">MDN</a></td>
+</tr>
+<tr>
+<td>pointBorderColor</td>
+<td><code>Color or Array&lt;Color&gt;</code></td>
+<td>The border color for points.</td>
+</tr>
+<tr>
+<td>pointBackgroundColor</td>
+<td><code>Color or Array&lt;Color&gt;</code></td>
+<td>The fill color for points</td>
+</tr>
+<tr>
+<td>pointBorderWidth</td>
+<td><code>Number or Array&lt;Number&gt;</code></td>
+<td>The width of the point border in pixels</td>
+</tr>
+<tr>
+<td>pointRadius</td>
+<td><code>Number or Array&lt;Number&gt;</code></td>
+<td>The radius of the point shape. If set to 0, nothing is rendered. </td>
+</tr>
+<tr>
+<td>pointHoverRadius</td>
+<td><code>Number or Array&lt;Number&gt;</code></td>
+<td>The radius of the point when hovered</td>
+</tr>
+<tr>
+<td>hitRadius</td>
+<td><code>Number or Array&lt;Number&gt;</code></td>
+<td>The pixel size of the non-displayed point that reacts to mouse events</td>
+</tr>
+<tr>
+<td>pointHoverBackgroundColor</td>
+<td><code>Color or Array&lt;Color&gt;</code></td>
+<td>Point background color when hovered</td>
+</tr>
+<tr>
+<td>pointHoverBorderColor</td>
+<td><code>Color or Array&lt;Color&gt;</code></td>
+<td>Point border color when hovered</td>
+</tr>
+<tr>
+<td>pointHoverBorderWidth</td>
+<td><code>Number or Array&lt;Number&gt;</code></td>
+<td>Border width of point when hovered</td>
+</tr>
+<tr>
+<td>pointStyle</td>
+<td><code>String or Array&lt;String&gt;</code></td>
+<td>The style of point. Options include 'circle', 'triangle', 'rect', 'rectRot', 'cross', 'crossRot', 'star', 'line', and 'dash'</td>
+</tr>
+</tbody>
+</table>
+</div><p>An example data object using these attributes is shown below.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> data = {
+    labels: [<span class="hljs-string">"Eating"</span>, <span class="hljs-string">"Drinking"</span>, <span class="hljs-string">"Sleeping"</span>, <span class="hljs-string">"Designing"</span>, <span class="hljs-string">"Coding"</span>, <span class="hljs-string">"Cycling"</span>, <span class="hljs-string">"Running"</span>],
+    datasets: [
+        {
+            label: <span class="hljs-string">"My First dataset"</span>,
+            backgroundColor: <span class="hljs-string">"rgba(179,181,198,0.2)"</span>,
+            borderColor: <span class="hljs-string">"rgba(179,181,198,1)"</span>,
+            pointBackgroundColor: <span class="hljs-string">"rgba(179,181,198,1)"</span>,
+            pointBorderColor: <span class="hljs-string">"#fff"</span>,
+            pointHoverBackgroundColor: <span class="hljs-string">"#fff"</span>,
+            pointHoverBorderColor: <span class="hljs-string">"rgba(179,181,198,1)"</span>,
+            data: [<span class="hljs-number">65</span>, <span class="hljs-number">59</span>, <span class="hljs-number">90</span>, <span class="hljs-number">81</span>, <span class="hljs-number">56</span>, <span class="hljs-number">55</span>, <span class="hljs-number">40</span>]
+        },
+        {
+            label: <span class="hljs-string">"My Second dataset"</span>,
+            backgroundColor: <span class="hljs-string">"rgba(255,99,132,0.2)"</span>,
+            borderColor: <span class="hljs-string">"rgba(255,99,132,1)"</span>,
+            pointBackgroundColor: <span class="hljs-string">"rgba(255,99,132,1)"</span>,
+            pointBorderColor: <span class="hljs-string">"#fff"</span>,
+            pointHoverBackgroundColor: <span class="hljs-string">"#fff"</span>,
+            pointHoverBorderColor: <span class="hljs-string">"rgba(255,99,132,1)"</span>,
+            data: [<span class="hljs-number">28</span>, <span class="hljs-number">48</span>, <span class="hljs-number">40</span>, <span class="hljs-number">19</span>, <span class="hljs-number">96</span>, <span class="hljs-number">27</span>, <span class="hljs-number">100</span>]
+        }
+    ]
+};
+</code></pre>
+<p>For a radar chart, to provide context of what each point means, we include an array of strings that show around each point in the chart.
+For the radar chart data, we have an array of datasets. Each of these is an object, with a fill colour, a stroke colour, a colour for the fill of each point, and a colour for the stroke of each point. We also have an array of data values.
+The label key on each dataset is optional, and can be used when generating a scale for the chart.</p>
+<h3 id="radar-chart-chart-options"><a class="fragment-link" href="http://www.chartjs.org/docs/#radar-chart-chart-options">Chart Options</a></h3><p>These are the customisation options specific to Radar charts. These options are merged with the <a href="http://www.chartjs.org/docs/#getting-started-global-chart-configuration">global chart configuration options</a>, and form the options of the chart.</p>
+<p>The default options for radar chart are defined in <code>Chart.defaults.radar</code>.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scale</td>
+<td>Object</td>
+<td><a href="http://www.chartjs.org/docs/#scales">See Scales</a> and <a href="http://www.chartjs.org/docs/#scales-radial-linear-scale">Defaults for Radial Linear Scale</a></td>
+<td>Options for the one scale used on the chart. Use this to style the ticks, labels, and grid lines.</td>
+</tr>
+<tr>
+<td><em>scale</em>.type</td>
+<td>String</td>
+<td>"radialLinear"</td>
+<td>As defined in <a href="http://www.chartjs.org/docs/#scales-radial-linear-scale">"Radial Linear"</a>.</td>
+</tr>
+<tr>
+<td><em>elements</em>.line</td>
+<td>Object</td>
+<td></td>
+<td>Options for all line elements used on the chart, as defined in the global elements, duplicated here to show Radar chart specific defaults.</td>
+</tr>
+<tr>
+<td><em>elements.line</em>.lineTension</td>
+<td>Number</td>
+<td>0</td>
+<td>Tension exhibited by lines when calculating splineCurve. Setting to 0 creates straight lines.</td>
+</tr>
+</tbody>
+</table>
+</div><p>You can override these for your <code>Chart</code> instance by passing a second argument into the <code>Radar</code> method as an object with the keys you want to override.</p>
+<p>For example, we could have a radar chart without a point for each on piece of data by doing the following:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">new</span> Chart(ctx, {
+    type: <span class="hljs-string">"radar"</span>,
+    data: data,
+    options: {
+            scale: {
+                reverse: <span class="hljs-literal">true</span>,
+                ticks: {
+                    beginAtZero: <span class="hljs-literal">true</span>
+                }
+            }
+    }
+});
+<span class="hljs-comment">// This will create a chart with all of the default options, merged from the global config,</span>
+<span class="hljs-comment">//  and the Radar chart defaults but this particular instance's scale will be reversed as</span>
+<span class="hljs-comment">// well as the ticks beginning at zero.</span>
+</code></pre>
+<p>We can also change these defaults values for each Radar type that is created, this object is available at <code>Chart.defaults.radar</code>.</p>
+
+		</div>
+	</section>
+
+			
+				
+	<section id="polar-area-chart">
+		<h2 class="section-title">
+			<a class="fragment-link" href="http://www.chartjs.org/docs/#polar-area-chart">Polar Area Chart</a>
+		</h2>
+		<div class="section-text">
+			<h3 id="polar-area-chart-introduction"><a class="fragment-link" href="http://www.chartjs.org/docs/#polar-area-chart-introduction">Introduction</a></h3><p>Polar area charts are similar to pie charts, but each segment has the same angle - the radius of the segment differs depending on the value.</p>
+<p>This type of chart is often useful when we want to show a comparison data similar to a pie chart, but also show a scale of values for context.</p>
+<div class="canvas-holder"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;" src="./Chart.js _ Documentation_files/saved_resource(3).html"></iframe>
+    <canvas width="1080" height="540" style="width: 1080px; height: 540px;"></canvas>
+</div>
+
+<h3 id="polar-area-chart-example-usage"><a class="fragment-link" href="http://www.chartjs.org/docs/#polar-area-chart-example-usage">Example usage</a></h3><pre><code class="lang-javascript"><span class="hljs-keyword">new</span> Chart(ctx, {
+    data: data,
+    type: <span class="hljs-string">'polarArea'</span>,
+    options: options
+});
+</code></pre>
+<h3 id="polar-area-chart-data-structure"><a class="fragment-link" href="http://www.chartjs.org/docs/#polar-area-chart-data-structure">Data structure</a></h3><p>The following options can be included in a polar area chart dataset to configure options for that specific dataset.</p>
+<p>Some properties are specified as arrays. The first value applies to the first bar, the second value to the second bar, and so on.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td><code>Array&lt;Number&gt;</code></td>
+<td>The data to plot as bars</td>
+</tr>
+<tr>
+<td>label</td>
+<td><code>String</code></td>
+<td>The label for the dataset which appears in the legend and tooltips</td>
+</tr>
+<tr>
+<td>backgroundColor</td>
+<td><code>Array&lt;Color&gt;</code></td>
+<td>The fill color of the arcs. See <a href="http://www.chartjs.org/docs/#colors">Colors</a></td>
+</tr>
+<tr>
+<td>borderColor</td>
+<td><code>Array&lt;Color&gt;</code></td>
+<td>Arc border color</td>
+</tr>
+<tr>
+<td>borderWidth</td>
+<td><code>Array&lt;Number&gt;</code></td>
+<td>Border width of arcs in pixels</td>
+</tr>
+<tr>
+<td>hoverBackgroundColor</td>
+<td><code>Array&lt;Color&gt;</code></td>
+<td>Arc background color when hovered</td>
+</tr>
+<tr>
+<td>hoverBorderColor</td>
+<td><code>Array&lt;Color&gt;</code></td>
+<td>Arc border color when hovered</td>
+</tr>
+<tr>
+<td>hoverBorderWidth</td>
+<td><code>Array&lt;Number&gt;</code></td>
+<td>Border width of arc when hovered</td>
+</tr>
+</tbody>
+</table>
+</div><p>An example data object using these attributes is shown below.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> data = {
+    datasets: [{
+        data: [
+            <span class="hljs-number">11</span>,
+            <span class="hljs-number">16</span>,
+            <span class="hljs-number">7</span>,
+            <span class="hljs-number">3</span>,
+            <span class="hljs-number">14</span>
+        ],
+        backgroundColor: [
+            <span class="hljs-string">"#FF6384"</span>,
+            <span class="hljs-string">"#4BC0C0"</span>,
+            <span class="hljs-string">"#FFCE56"</span>,
+            <span class="hljs-string">"#E7E9ED"</span>,
+            <span class="hljs-string">"#36A2EB"</span>
+        ],
+        label: <span class="hljs-string">'My dataset'</span> <span class="hljs-comment">// for legend</span>
+    }],
+    labels: [
+        <span class="hljs-string">"Red"</span>,
+        <span class="hljs-string">"Green"</span>,
+        <span class="hljs-string">"Yellow"</span>,
+        <span class="hljs-string">"Grey"</span>,
+        <span class="hljs-string">"Blue"</span>
+    ]
+};
+</code></pre>
+<p>As you can see, for the chart data you pass in an array of objects, with a value and a colour. The value attribute should be a number, while the color attribute should be a string. Similar to CSS, for this string you can use HEX notation, RGB, RGBA or HSL.</p>
+<h3 id="polar-area-chart-chart-options"><a class="fragment-link" href="http://www.chartjs.org/docs/#polar-area-chart-chart-options">Chart options</a></h3><p>These are the customisation options specific to Polar Area charts. These options are merged with the <a href="http://www.chartjs.org/docs/#getting-started-global-chart-configuration">global chart configuration options</a>, and form the options of the chart.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scale</td>
+<td>Object</td>
+<td><a href="http://www.chartjs.org/docs/#scales">See Scales</a> and <a href="http://www.chartjs.org/docs/#scales-radial-linear-scale">Defaults for Radial Linear Scale</a></td>
+<td>Options for the one scale used on the chart. Use this to style the ticks, labels, and grid.</td>
+</tr>
+<tr>
+<td><em>scale</em>.type</td>
+<td>String</td>
+<td>"radialLinear"</td>
+<td>As defined in <a href="http://www.chartjs.org/docs/#scales-radial-linear-scale">"Radial Linear"</a>.</td>
+</tr>
+<tr>
+<td><em>scale</em>.lineArc</td>
+<td>Boolean</td>
+<td>true</td>
+<td>When true, lines are circular.</td>
+</tr>
+<tr>
+<td>animateRotate</td>
+<td>Boolean</td>
+<td>true</td>
+<td>If true, will animate the rotation of the chart.</td>
+</tr>
+<tr>
+<td>animateScale</td>
+<td>Boolean</td>
+<td>true</td>
+<td>If true, will animate scaling the chart.</td>
+</tr>
+<tr>
+<td><em>legend</em>.<em>labels</em>.generateLabels</td>
+<td>Function</td>
+<td><code>function(data) {}</code></td>
+<td>Returns labels for each the legend</td>
+</tr>
+<tr>
+<td><em>legend</em>.onClick</td>
+<td>Function</td>
+<td>function(event, legendItem) {} `</td>
+<td>Handles clicking an individual legend item</td>
+</tr>
+<tr>
+<td>legendCallback</td>
+<td>Function</td>
+<td><code>function(chart)</code></td>
+<td>Generates the HTML legend via calls to <code>generateLegend</code></td>
+</tr>
+</tbody>
+</table>
+</div><p>You can override these for your <code>Chart</code> instance by passing a second argument into the <code>PolarArea</code> method as an object with the keys you want to override.</p>
+<p>For example, we could have a polar area chart with a black stroke on each segment like so:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">new</span> Chart(ctx, {
+    data: data,
+    type: <span class="hljs-string">"polarArea"</span>,
+    options: {
+        elements: {
+            arc: {
+                borderColor: <span class="hljs-string">"#000000"</span>
+            }
+        }
+    }
+});
+<span class="hljs-comment">// This will create a chart with all of the default options, merged from the global config,</span>
+<span class="hljs-comment">// and the PolarArea chart defaults but this particular instance will have `elements.arc.borderColor` set to `"#000000"`.</span>
+</code></pre>
+<p>We can also change these defaults values for each PolarArea type that is created, this object is available at <code>Chart.defaults.polarArea</code>.</p>
+
+		</div>
+	</section>
+
+			
+				
+	<section id="doughnut-pie-chart">
+		<h2 class="section-title">
+			<a class="fragment-link" href="http://www.chartjs.org/docs/#doughnut-pie-chart">Pie &amp; Doughnut Charts</a>
+		</h2>
+		<div class="section-text">
+			<h3 id="doughnut-pie-chart-introduction"><a class="fragment-link" href="http://www.chartjs.org/docs/#doughnut-pie-chart-introduction">Introduction</a></h3><p>Pie and doughnut charts are probably the most commonly used chart there are. They are divided into segments, the arc of each segment shows the proportional value of each piece of data.</p>
+<p>They are excellent at showing the relational proportions between data.</p>
+<p>Pie and doughnut charts are effectively the same class in Chart.js, but have one different default value - their <code>cutoutPercentage</code>. This equates what percentage of the inner should be cut out. This defaults to <code>0</code> for pie charts, and <code>50</code> for doughnuts.</p>
+<p>They are also registered under two aliases in the <code>Chart</code> core. Other than their different default value, and different alias, they are exactly the same.</p>
+<div class="canvas-holder half"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;" src="./Chart.js _ Documentation_files/saved_resource(4).html"></iframe>
+    <canvas width="540" height="270" style="width: 540px; height: 270px;"></canvas>
+</div>
+
+<div class="canvas-holder half"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;" src="./Chart.js _ Documentation_files/saved_resource(5).html"></iframe>
+    <canvas width="540" height="270" style="width: 540px; height: 270px;"></canvas>
+</div>
+
+
+<h3 id="doughnut-pie-chart-example-usage"><a class="fragment-link" href="http://www.chartjs.org/docs/#doughnut-pie-chart-example-usage">Example usage</a></h3><pre><code class="lang-javascript"><span class="hljs-comment">// For a pie chart</span>
+<span class="hljs-keyword">var</span> myPieChart = <span class="hljs-keyword">new</span> Chart(ctx,{
+    type: <span class="hljs-string">'pie'</span>,
+    data: data,
+    options: options
+});
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// And for a doughnut chart</span>
+<span class="hljs-keyword">var</span> myDoughnutChart = <span class="hljs-keyword">new</span> Chart(ctx, {
+    type: <span class="hljs-string">'doughnut'</span>,
+    data: data,
+    options: options
+});
+</code></pre>
+<h3 id="doughnut-pie-chart-data-structure"><a class="fragment-link" href="http://www.chartjs.org/docs/#doughnut-pie-chart-data-structure">Data structure</a></h3><div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td><code>Array&lt;Number&gt;</code></td>
+<td>The data to plot as bars</td>
+</tr>
+<tr>
+<td>label</td>
+<td><code>String</code></td>
+<td>The label for the dataset which appears in the legend and tooltips</td>
+</tr>
+<tr>
+<td>backgroundColor</td>
+<td><code>Array&lt;Color&gt;</code></td>
+<td>The fill color of the arcs. See <a href="http://www.chartjs.org/docs/#colors">Colors</a></td>
+</tr>
+<tr>
+<td>borderColor</td>
+<td><code>Array&lt;Color&gt;</code></td>
+<td>Arc border color</td>
+</tr>
+<tr>
+<td>borderWidth</td>
+<td><code>Array&lt;Number&gt;</code></td>
+<td>Border width of arcs in pixels</td>
+</tr>
+<tr>
+<td>hoverBackgroundColor</td>
+<td><code>Array&lt;Color&gt;</code></td>
+<td>Arc background color when hovered</td>
+</tr>
+<tr>
+<td>hoverBorderColor</td>
+<td><code>Array&lt;Color&gt;</code></td>
+<td>Arc border color when hovered</td>
+</tr>
+<tr>
+<td>hoverBorderWidth</td>
+<td><code>Array&lt;Number&gt;</code></td>
+<td>Border width of arc when hovered</td>
+</tr>
+</tbody>
+</table>
+</div><p>An example data object using these attributes is shown below.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> data = {
+    labels: [
+        <span class="hljs-string">"Red"</span>,
+        <span class="hljs-string">"Green"</span>,
+        <span class="hljs-string">"Yellow"</span>
+    ],
+    datasets: [
+        {
+            data: [<span class="hljs-number">300</span>, <span class="hljs-number">50</span>, <span class="hljs-number">100</span>],
+            backgroundColor: [
+                <span class="hljs-string">"#FF6384"</span>,
+                <span class="hljs-string">"#36A2EB"</span>,
+                <span class="hljs-string">"#FFCE56"</span>
+            ],
+            hoverBackgroundColor: [
+                <span class="hljs-string">"#FF6384"</span>,
+                <span class="hljs-string">"#36A2EB"</span>,
+                <span class="hljs-string">"#FFCE56"</span>
+            ]
+        }]
+};
+</code></pre>
+<p>For a pie chart, datasets need to contain an array of data points. The data points should be a number, Chart.js will total all of the numbers and calculate the relative proportion of each. You can also add an array of background colors. The color attributes should be a string. Similar to CSS, for this string you can use HEX notation, RGB, RGBA or HSL.</p>
+<h3 id="doughnut-pie-chart-chart-options"><a class="fragment-link" href="http://www.chartjs.org/docs/#doughnut-pie-chart-chart-options">Chart options</a></h3><p>These are the customisation options specific to Pie &amp; Doughnut charts. These options are merged with the <a href="http://www.chartjs.org/docs/#getting-started-global-chart-configuration">global chart configuration options</a>, and form the options of the chart.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cutoutPercentage</td>
+<td>Number</td>
+<td>50 - for doughnut, 0 - for pie</td>
+<td>The percentage of the chart that is cut out of the middle.</td>
+</tr>
+<tr>
+<td>rotation</td>
+<td>Number</td>
+<td>-0.5 * Math.PI</td>
+<td>Starting angle to draw arcs from</td>
+</tr>
+<tr>
+<td>circumference</td>
+<td>Number</td>
+<td>2 * Math.PI</td>
+<td>Sweep to allow arcs to cover</td>
+</tr>
+<tr>
+<td><em>animation</em>.animateRotate</td>
+<td>Boolean</td>
+<td>true</td>
+<td>If true, will animate the rotation of the chart.</td>
+</tr>
+<tr>
+<td><em>animation</em>.animateScale</td>
+<td>Boolean</td>
+<td>false</td>
+<td>If true, will animate scaling the Doughnut from the centre.</td>
+</tr>
+<tr>
+<td><em>legend</em>.<em>labels</em>.generateLabels</td>
+<td>Function</td>
+<td><code>function(data) {}</code></td>
+<td>Returns labels for each the legend</td>
+</tr>
+<tr>
+<td><em>legend</em>.onClick</td>
+<td>Function</td>
+<td>function(event, legendItem) {} `</td>
+<td>Handles clicking an individual legend item</td>
+</tr>
+</tbody>
+</table>
+</div><p>You can override these for your <code>Chart</code> instance by passing a second argument into the <code>Doughnut</code> method as an object with the keys you want to override.</p>
+<p>For example, we could have a doughnut chart that animates by scaling out from the centre like so:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">new</span> Chart(ctx,{
+    type:<span class="hljs-string">"doughnut"</span>,
+    animation:{
+        animateScale:<span class="hljs-literal">true</span>
+    }
+});
+<span class="hljs-comment">// This will create a chart with all of the default options, merged from the global config,</span>
+<span class="hljs-comment">// and the Doughnut chart defaults but this particular instance will have `animateScale` set to `true`.</span>
+</code></pre>
+<p>We can also change these default values for each Doughnut type that is created, this object is available at <code>Chart.defaults.doughnut</code>. Pie charts also have a clone of these defaults available to change at <code>Chart.defaults.pie</code>, with the only difference being <code>cutoutPercentage</code> being set to 0.</p>
+
+		</div>
+	</section>
+
+			
+				
+	<section id="scales">
+		<h2 class="section-title">
+			<a class="fragment-link" href="http://www.chartjs.org/docs/#scales">Scales</a>
+		</h2>
+		<div class="section-text">
+			<p>Scales in v2.0 of Chart.js are significantly more powerful, but also different than those of v1.0.</p>
+<ul>
+<li>Multiple x &amp; y axes are now supported.</li>
+<li>A built-in label auto-skip feature now detects would-be overlapping ticks and labels and removes every nth label to keep things displaying normally.</li>
+<li>Scale titles are now supported</li>
+<li>New scale types can be extended without writing an entirely new chart type</li>
+</ul>
+<p>Every scale extends a core scale class with the following options:</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align:center">Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td style="text-align:center">String</td>
+<td>Chart specific.</td>
+<td>Type of scale being employed. Custom scales can be created and registered with a string key. Options: <a href="http://www.chartjs.org/docs/#scales-category-scale">"category"</a>, <a href="http://www.chartjs.org/docs/#scales-linear-scale">"linear"</a>, <a href="http://www.chartjs.org/docs/#scales-logarithmic-scale">"logarithmic"</a>, <a href="http://www.chartjs.org/docs/#scales-time-scale">"time"</a>, <a href="http://www.chartjs.org/docs/#scales-radial-linear-scale">"radialLinear"</a></td>
+</tr>
+<tr>
+<td>display</td>
+<td style="text-align:center">Boolean</td>
+<td>true</td>
+<td>If true, show the scale including gridlines, ticks, and labels. Overrides <em>gridLines.display</em>, <em>scaleLabel.display</em>, and <em>ticks.display</em>.</td>
+</tr>
+<tr>
+<td>position</td>
+<td style="text-align:center">String</td>
+<td>"left"</td>
+<td>Position of the scale. Possible values are top, left, bottom and right.</td>
+</tr>
+<tr>
+<td>beforeUpdate</td>
+<td style="text-align:center">Function</td>
+<td>undefined</td>
+<td>Callback called before the update process starts. Passed a single argument, the scale instance.</td>
+</tr>
+<tr>
+<td>beforeSetDimensions</td>
+<td style="text-align:center">Function</td>
+<td>undefined</td>
+<td>Callback that runs before dimensions are set. Passed a single argument, the scale instance.</td>
+</tr>
+<tr>
+<td>afterSetDimensions</td>
+<td style="text-align:center">Function</td>
+<td>undefined</td>
+<td>Callback that runs after dimensions are set. Passed a single argument, the scale instance.</td>
+</tr>
+<tr>
+<td>beforeDataLimits</td>
+<td style="text-align:center">Function</td>
+<td>undefined</td>
+<td>Callback that runs before data limits are determined. Passed a single argument, the scale instance.</td>
+</tr>
+<tr>
+<td>afterDataLimits</td>
+<td style="text-align:center">Function</td>
+<td>undefined</td>
+<td>Callback that runs after data limits are determined. Passed a single argument, the scale instance.</td>
+</tr>
+<tr>
+<td>beforeBuildTicks</td>
+<td style="text-align:center">Function</td>
+<td>undefined</td>
+<td>Callback that runs before ticks are created. Passed a single argument, the scale instance.</td>
+</tr>
+<tr>
+<td>afterBuildTicks</td>
+<td style="text-align:center">Function</td>
+<td>undefined</td>
+<td>Callback that runs after ticks are created. Useful for filtering ticks. Passed a single argument, the scale instance.</td>
+</tr>
+<tr>
+<td>beforeTickToLabelConversion</td>
+<td style="text-align:center">Function</td>
+<td>undefined</td>
+<td>Callback that runs before ticks are converted into strings. Passed a single argument, the scale instance.</td>
+</tr>
+<tr>
+<td>afterTickToLabelConversion</td>
+<td style="text-align:center">Function</td>
+<td>undefined</td>
+<td>Callback that runs after ticks are converted into strings. Passed a single argument, the scale instance.</td>
+</tr>
+<tr>
+<td>beforeCalculateTickRotation</td>
+<td style="text-align:center">Function</td>
+<td>undefined</td>
+<td>Callback that runs before tick rotation is determined. Passed a single argument, the scale instance.</td>
+</tr>
+<tr>
+<td>afterCalculateTickRotation</td>
+<td style="text-align:center">Function</td>
+<td>undefined</td>
+<td>Callback that runs after tick rotation is determined. Passed a single argument, the scale instance.</td>
+</tr>
+<tr>
+<td>beforeFit</td>
+<td style="text-align:center">Function</td>
+<td>undefined</td>
+<td>Callback that runs before the scale fits to the canvas. Passed a single argument, the scale instance.</td>
+</tr>
+<tr>
+<td>afterFit</td>
+<td style="text-align:center">Function</td>
+<td>undefined</td>
+<td>Callback that runs after the scale fits to the canvas. Passed a single argument, the scale instance.</td>
+</tr>
+<tr>
+<td>afterUpdate</td>
+<td style="text-align:center">Function</td>
+<td>undefined</td>
+<td>Callback that runs at the end of the update process. Passed a single argument, the scale instance.</td>
+</tr>
+<tr>
+<td><strong>gridLines</strong></td>
+<td style="text-align:center">Object</td>
+<td>-</td>
+<td>Options for the grid lines that run perpendicular to the axis.</td>
+</tr>
+<tr>
+<td><em>gridLines</em>.display</td>
+<td style="text-align:center">Boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td><em>gridLines</em>.color</td>
+<td style="text-align:center">Color</td>
+<td>"rgba(0, 0, 0, 0.1)"</td>
+<td>Color of the grid lines.</td>
+</tr>
+<tr>
+<td><em>gridLines</em>.lineWidth</td>
+<td style="text-align:center">Number</td>
+<td>1</td>
+<td>Stroke width of grid lines</td>
+</tr>
+<tr>
+<td><em>gridLines</em>.drawOnChartArea</td>
+<td style="text-align:center">Boolean</td>
+<td>true</td>
+<td>If true, draw lines on the chart area inside the axis lines. This is useful when there are multiple axes and you need to control which grid lines are drawn</td>
+</tr>
+<tr>
+<td><em>gridLines</em>.drawTicks</td>
+<td style="text-align:center">Boolean</td>
+<td>true</td>
+<td>If true, draw lines beside the ticks in the axis area beside the chart.</td>
+</tr>
+<tr>
+<td><em>gridLines</em>.tickMarkLength</td>
+<td style="text-align:center">Number</td>
+<td>10</td>
+<td>Length in pixels that the grid lines will draw into the axis area.</td>
+</tr>
+<tr>
+<td><em>gridLines</em>.zeroLineWidth</td>
+<td style="text-align:center">Number</td>
+<td>1</td>
+<td>Stroke width of the grid line for the first index (index 0).</td>
+</tr>
+<tr>
+<td><em>gridLines</em>.zeroLineColor</td>
+<td style="text-align:center">Color</td>
+<td>"rgba(0, 0, 0, 0.25)"</td>
+<td>Stroke color of the grid line for the first index (index 0).</td>
+</tr>
+<tr>
+<td><em>gridLines</em>.offsetGridLines</td>
+<td style="text-align:center">Boolean</td>
+<td>false</td>
+<td>If true, offset labels from grid lines.</td>
+</tr>
+<tr>
+<td><strong>scaleLabel</strong></td>
+<td style="text-align:center">Object</td>
+<td></td>
+<td>Title for the entire axis.</td>
+</tr>
+<tr>
+<td><em>scaleLabel</em>.display</td>
+<td style="text-align:center">Boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td><em>scaleLabel</em>.labelString</td>
+<td style="text-align:center">String</td>
+<td>""</td>
+<td>The text for the title. (i.e. "# of People", "Response Choices")</td>
+</tr>
+<tr>
+<td><em>scaleLabel</em>.fontColor</td>
+<td style="text-align:center">Color</td>
+<td>"#666"</td>
+<td>Font color for the scale title.</td>
+</tr>
+<tr>
+<td><em>scaleLabel</em>.fontFamily</td>
+<td style="text-align:center">String</td>
+<td>"Helvetica Neue"</td>
+<td>Font family for the scale title, follows CSS font-family options.</td>
+</tr>
+<tr>
+<td><em>scaleLabel</em>.fontSize</td>
+<td style="text-align:center">Number</td>
+<td>12</td>
+<td>Font size for the scale title.</td>
+</tr>
+<tr>
+<td><em>scaleLabel</em>.fontStyle</td>
+<td style="text-align:center">String</td>
+<td>"normal"</td>
+<td>Font style for the scale title, follows CSS font-style options (i.e. normal, italic, oblique, initial, inherit).</td>
+</tr>
+<tr>
+<td><strong>ticks</strong></td>
+<td style="text-align:center">Object</td>
+<td></td>
+<td>Settings for the labels that run along the axis.</td>
+</tr>
+<tr>
+<td><em>ticks</em>.beginAtZero</td>
+<td style="text-align:center">Boolean</td>
+<td>false</td>
+<td>If true the scale will be begin at 0, if false the ticks will begin at your smallest data value.</td>
+</tr>
+<tr>
+<td><em>ticks</em>.fontColor</td>
+<td style="text-align:center">Color</td>
+<td>"#666"</td>
+<td>Font color for the tick labels.</td>
+</tr>
+<tr>
+<td><em>ticks</em>.fontFamily</td>
+<td style="text-align:center">String</td>
+<td>"Helvetica Neue"</td>
+<td>Font family for the tick labels, follows CSS font-family options.</td>
+</tr>
+<tr>
+<td><em>ticks</em>.fontSize</td>
+<td style="text-align:center">Number</td>
+<td>12</td>
+<td>Font size for the tick labels.</td>
+</tr>
+<tr>
+<td><em>ticks</em>.fontStyle</td>
+<td style="text-align:center">String</td>
+<td>"normal"</td>
+<td>Font style for the tick labels, follows CSS font-style options (i.e. normal, italic, oblique, initial, inherit).</td>
+</tr>
+<tr>
+<td><em>ticks</em>.maxRotation</td>
+<td style="text-align:center">Number</td>
+<td>90</td>
+<td>Maximum rotation for tick labels when rotating to condense labels. Note: Rotation doesn't occur until necessary. <em>Note: Only applicable to horizontal scales.</em></td>
+</tr>
+<tr>
+<td><em>ticks</em>.minRotation</td>
+<td style="text-align:center">Number</td>
+<td>20</td>
+<td><em>currently not-implemented</em> Minimum rotation for tick labels when condensing is necessary.  <em>Note: Only applicable to horizontal scales.</em></td>
+</tr>
+<tr>
+<td><em>ticks</em>.maxTicksLimit</td>
+<td style="text-align:center">Number</td>
+<td>11</td>
+<td>Maximum number of ticks and gridlines to show. If not defined, it will limit to 11 ticks but will show all gridlines.</td>
+</tr>
+<tr>
+<td><em>ticks</em>.padding</td>
+<td style="text-align:center">Number</td>
+<td>10</td>
+<td>Padding between the tick label and the axis. <em>Note: Only applicable to horizontal scales.</em></td>
+</tr>
+<tr>
+<td><em>ticks</em>.mirror</td>
+<td style="text-align:center">Boolean</td>
+<td>false</td>
+<td>Flips tick labels around axis, displaying the labels inside the chart instead of outside. <em>Note: Only applicable to vertical scales.</em></td>
+</tr>
+<tr>
+<td><em>ticks</em>.reverse</td>
+<td style="text-align:center">Boolean</td>
+<td>false</td>
+<td>Reverses order of tick labels.</td>
+</tr>
+<tr>
+<td><em>ticks</em>.display</td>
+<td style="text-align:center">Boolean</td>
+<td>true</td>
+<td>If true, show the ticks.</td>
+</tr>
+<tr>
+<td><em>ticks</em>.suggestedMin</td>
+<td style="text-align:center">Number</td>
+<td>-</td>
+<td>User defined minimum number for the scale, overrides minimum value <em>except for if</em> it is higher than the minimum value.</td>
+</tr>
+<tr>
+<td><em>ticks</em>.suggestedMax</td>
+<td style="text-align:center">Number</td>
+<td>-</td>
+<td>User defined maximum number for the scale, overrides maximum value <em>except for if</em> it is lower than the maximum value.</td>
+</tr>
+<tr>
+<td><em>ticks</em>.min</td>
+<td style="text-align:center">Number</td>
+<td>-</td>
+<td>User defined minimum number for the scale, overrides minimum value. </td>
+</tr>
+<tr>
+<td><em>ticks</em>.max</td>
+<td style="text-align:center">Number</td>
+<td>-</td>
+<td>User defined minimum number for the scale, overrides maximum value</td>
+</tr>
+<tr>
+<td><em>ticks</em>.autoSkip</td>
+<td style="text-align:center">Boolean</td>
+<td>true</td>
+<td>If true, automatically calculates how many labels that can be shown and hides labels accordingly. Turn it off to show all labels no matter what</td>
+</tr>
+<tr>
+<td><em>ticks</em>.callback</td>
+<td style="text-align:center">Function</td>
+<td><code>function(value) { return '' + value; }</code></td>
+<td>Returns the string representation of the tick value as it should be displayed on the chart.</td>
+</tr>
+</tbody>
+</table>
+</div><p>The <code>callback</code> method may be used for advanced tick customization. The following callback would display every label in scientific notation</p>
+<pre><code class="lang-javascript">{
+    scales: {
+        xAxes: [{
+            ticks: {
+                <span class="hljs-comment">// Return an empty string to draw the tick line but hide the tick label</span>
+                <span class="hljs-comment">// Return `null` or `undefined` to hide the tick line entirely</span>
+                   userCallback: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value, index, values</span>) </span>{
+                    <span class="hljs-keyword">return</span> value.toExponential();
+                }
+            }
+        }]
+    }
+}
+</code></pre>
+<h3 id="scales-category-scale"><a class="fragment-link" href="http://www.chartjs.org/docs/#scales-category-scale">Category Scale</a></h3><p>The category scale will be familiar to those who have used v1.0. Labels are drawn in from the labels array included in the chart data.</p>
+<p>The category scale extends the core scale class with the following tick template:</p>
+<pre><code class="lang-javascript">{
+    position: <span class="hljs-string">"bottom"</span>,
+}
+</code></pre>
+<p>The <code>ticks.min</code> and <code>ticks.max</code> attributes may be used with the category scale. Unlike other scales, the value of these attributes must simply be something that can be found in the <code>labels</code> array of the data object.</p>
+<h3 id="scales-linear-scale"><a class="fragment-link" href="http://www.chartjs.org/docs/#scales-linear-scale">Linear Scale</a></h3><p>The linear scale can be used to display numerical data. It can be placed on either the x or y axis. The scatter chart type automatically configures a line chart to use one of these scales for the x axis.</p>
+<p>The linear scale extends the core scale class with the following tick template:</p>
+<pre><code class="lang-javascript">{
+    position: <span class="hljs-string">"left"</span>,
+    ticks: {
+        callback: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">tickValue, index, ticks</span>) </span>{
+            <span class="hljs-keyword">var</span> delta = ticks[<span class="hljs-number">1</span>] - ticks[<span class="hljs-number">0</span>];
+
+            <span class="hljs-comment">// If we have a number like 2.5 as the delta, figure out how many decimal places we need</span>
+            <span class="hljs-keyword">if</span> (<span class="hljs-built_in">Math</span>.abs(delta) &gt; <span class="hljs-number">1</span>) {
+                <span class="hljs-keyword">if</span> (tickValue !== <span class="hljs-built_in">Math</span>.floor(tickValue)) {
+                    <span class="hljs-comment">// not an integer</span>
+                    delta = tickValue - <span class="hljs-built_in">Math</span>.floor(tickValue);
+                }
+            }
+
+            <span class="hljs-keyword">var</span> logDelta = helpers.log10(<span class="hljs-built_in">Math</span>.abs(delta));
+            <span class="hljs-keyword">var</span> tickString = <span class="hljs-string">''</span>;
+
+            <span class="hljs-keyword">if</span> (tickValue !== <span class="hljs-number">0</span>) {
+                <span class="hljs-keyword">var</span> numDecimal = <span class="hljs-number">-1</span> * <span class="hljs-built_in">Math</span>.floor(logDelta);
+                numDecimal = <span class="hljs-built_in">Math</span>.max(<span class="hljs-built_in">Math</span>.min(numDecimal, <span class="hljs-number">20</span>), <span class="hljs-number">0</span>); <span class="hljs-comment">// toFixed has a max of 20 decimal places</span>
+                tickString = tickValue.toFixed(numDecimal);
+            } <span class="hljs-keyword">else</span> {
+                tickString = <span class="hljs-string">'0'</span>; <span class="hljs-comment">// never show decimal places for 0</span>
+            }
+
+              <span class="hljs-keyword">return</span> tickString;
+          }
+    }
+}
+</code></pre>
+<p>It also provides additional configuration options:</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align:center">Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>ticks</em>.stepSize</td>
+<td style="text-align:center">Number</td>
+<td>-</td>
+<td>User defined fixed step size for the scale. If set, the scale ticks will be enumerated by multiple of stepSize, having one tick per increment. If not set, the ticks are labeled automatically using the nice numbers algorithm.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="scales-logarithmic-scale"><a class="fragment-link" href="http://www.chartjs.org/docs/#scales-logarithmic-scale">Logarithmic Scale</a></h3><p>The logarithmic scale is used to display logarithmic data of course. It can be placed on either the x or y axis.</p>
+<p>The log scale extends the core scale class with the following tick template:</p>
+<pre><code class="lang-javascript">{
+    position: <span class="hljs-string">"left"</span>,
+    ticks: {
+        callback: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value</span>) </span>{
+            <span class="hljs-keyword">var</span> remain = value / (<span class="hljs-built_in">Math</span>.pow(<span class="hljs-number">10</span>, <span class="hljs-built_in">Math</span>.floor(Chart.helpers.log10(value))));
+
+            <span class="hljs-keyword">if</span> (remain === <span class="hljs-number">1</span> || remain === <span class="hljs-number">2</span> || remain === <span class="hljs-number">5</span>) {
+                <span class="hljs-keyword">return</span> value.toExponential();
+            } <span class="hljs-keyword">else</span> {
+                <span class="hljs-keyword">return</span> <span class="hljs-string">''</span>;
+            }
+        }
+    }
+}
+</code></pre>
+<h3 id="scales-time-scale"><a class="fragment-link" href="http://www.chartjs.org/docs/#scales-time-scale">Time Scale</a></h3><p>The time scale is used to display times and dates. It can be placed on the x axis. When building its ticks, it will automatically calculate the most comfortable unit base on the size of the scale.</p>
+<p>The time scale extends the core scale class with the following tick template:</p>
+<pre><code class="lang-javascript">{
+    position: <span class="hljs-string">"bottom"</span>,
+    time: {
+        <span class="hljs-comment">// string/callback - By default, date objects are expected. You may use a pattern string from http://momentjs.com/docs/#/parsing/string-format/ to parse a time string format, or use a callback function that is passed the label, and must return a moment() instance.</span>
+        parser: <span class="hljs-literal">false</span>,
+        <span class="hljs-comment">// string - By default, unit will automatically be detected.  Override with 'week', 'month', 'year', etc. (see supported time measurements)</span>
+        unit: <span class="hljs-literal">false</span>,
+
+        <span class="hljs-comment">// Number - The number of steps of the above unit between ticks</span>
+        unitStepSize: <span class="hljs-number">1</span>
+
+        <span class="hljs-comment">// string - By default, no rounding is applied.  To round, set to a supported time unit eg. 'week', 'month', 'year', etc.</span>
+        round: <span class="hljs-literal">false</span>,
+
+        <span class="hljs-comment">// Moment js for each of the units. Replaces `displayFormat`</span>
+        <span class="hljs-comment">// To override, use a pattern string from http://momentjs.com/docs/#/displaying/format/</span>
+        displayFormats: {
+            <span class="hljs-string">'millisecond'</span>: <span class="hljs-string">'SSS [ms]'</span>,
+            <span class="hljs-string">'second'</span>: <span class="hljs-string">'h:mm:ss a'</span>, <span class="hljs-comment">// 11:20:01 AM</span>
+            <span class="hljs-string">'minute'</span>: <span class="hljs-string">'h:mm:ss a'</span>, <span class="hljs-comment">// 11:20:01 AM</span>
+            <span class="hljs-string">'hour'</span>: <span class="hljs-string">'MMM D, hA'</span>, <span class="hljs-comment">// Sept 4, 5PM</span>
+            <span class="hljs-string">'day'</span>: <span class="hljs-string">'ll'</span>, <span class="hljs-comment">// Sep 4 2015</span>
+            <span class="hljs-string">'week'</span>: <span class="hljs-string">'ll'</span>, <span class="hljs-comment">// Week 46, or maybe "[W]WW - YYYY" ?</span>
+            <span class="hljs-string">'month'</span>: <span class="hljs-string">'MMM YYYY'</span>, <span class="hljs-comment">// Sept 2015</span>
+            <span class="hljs-string">'quarter'</span>: <span class="hljs-string">'[Q]Q - YYYY'</span>, <span class="hljs-comment">// Q3</span>
+            <span class="hljs-string">'year'</span>: <span class="hljs-string">'YYYY'</span>, <span class="hljs-comment">// 2015</span>
+        },
+        <span class="hljs-comment">// Sets the display format used in tooltip generation</span>
+        tooltipFormat: <span class="hljs-string">''</span>
+    },
+}
+</code></pre>
+<p>The following time measurements are supported:</p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-string">'millisecond'</span>: {
+        display: <span class="hljs-string">'SSS [ms]'</span>, <span class="hljs-comment">// 002 ms</span>
+        maxStep: <span class="hljs-number">1000</span>,
+    },
+    <span class="hljs-string">'second'</span>: {
+        display: <span class="hljs-string">'h:mm:ss a'</span>, <span class="hljs-comment">// 11:20:01 AM</span>
+        maxStep: <span class="hljs-number">60</span>,
+    },
+    <span class="hljs-string">'minute'</span>: {
+        display: <span class="hljs-string">'h:mm:ss a'</span>, <span class="hljs-comment">// 11:20:01 AM</span>
+        maxStep: <span class="hljs-number">60</span>,
+    },
+    <span class="hljs-string">'hour'</span>: {
+        display: <span class="hljs-string">'MMM D, hA'</span>, <span class="hljs-comment">// Sept 4, 5PM</span>
+        maxStep: <span class="hljs-number">24</span>,
+    },
+    <span class="hljs-string">'day'</span>: {
+        display: <span class="hljs-string">'ll'</span>, <span class="hljs-comment">// Sep 4 2015</span>
+        maxStep: <span class="hljs-number">7</span>,
+    },
+    <span class="hljs-string">'week'</span>: {
+        display: <span class="hljs-string">'ll'</span>, <span class="hljs-comment">// Week 46, or maybe "[W]WW - YYYY" ?</span>
+        maxStep: <span class="hljs-number">4.3333</span>,
+    },
+    <span class="hljs-string">'month'</span>: {
+        display: <span class="hljs-string">'MMM YYYY'</span>, <span class="hljs-comment">// Sept 2015</span>
+        maxStep: <span class="hljs-number">12</span>,
+    },
+    <span class="hljs-string">'quarter'</span>: {
+        display: <span class="hljs-string">'[Q]Q - YYYY'</span>, <span class="hljs-comment">// Q3</span>
+        maxStep: <span class="hljs-number">4</span>,
+    },
+    <span class="hljs-string">'year'</span>: {
+        display: <span class="hljs-string">'YYYY'</span>, <span class="hljs-comment">// 2015</span>
+        maxStep: <span class="hljs-literal">false</span>,
+    },
+}
+</code></pre>
+<h3 id="scales-radial-linear-scale"><a class="fragment-link" href="http://www.chartjs.org/docs/#scales-radial-linear-scale">Radial Linear Scale</a></h3><p>The radial linear scale is used specifically for the radar chart type.</p>
+<p>The radial linear scale extends the core scale class with the following tick template:</p>
+<pre><code class="lang-javascript">{
+    animate: <span class="hljs-literal">true</span>,
+    lineArc: <span class="hljs-literal">false</span>,
+    position: <span class="hljs-string">"chartArea"</span>,
+
+    angleLines: {
+        display: <span class="hljs-literal">true</span>,
+        color: <span class="hljs-string">"rgba(0, 0, 0, 0.1)"</span>,
+        lineWidth: <span class="hljs-number">1</span>
+    },
+
+    <span class="hljs-comment">// label settings</span>
+    ticks: {
+        <span class="hljs-comment">//Boolean - Show a backdrop to the scale label</span>
+        showLabelBackdrop: <span class="hljs-literal">true</span>,
+
+        <span class="hljs-comment">//String - The colour of the label backdrop</span>
+        backdropColor: <span class="hljs-string">"rgba(255,255,255,0.75)"</span>,
+
+        <span class="hljs-comment">//Number - The backdrop padding above &amp; below the label in pixels</span>
+        backdropPaddingY: <span class="hljs-number">2</span>,
+
+        <span class="hljs-comment">//Number - The backdrop padding to the side of the label in pixels</span>
+        backdropPaddingX: <span class="hljs-number">2</span>,
+
+        <span class="hljs-comment">//Number - Limit the maximum number of ticks and gridlines</span>
+        maxTicksLimit: <span class="hljs-number">11</span>,
+    },
+
+    pointLabels: {
+        <span class="hljs-comment">//String - Point label font declaration</span>
+        fontFamily: <span class="hljs-string">"'Arial'"</span>,
+
+        <span class="hljs-comment">//String - Point label font weight</span>
+        fontStyle: <span class="hljs-string">"normal"</span>,
+
+        <span class="hljs-comment">//Number - Point label font size in pixels</span>
+        fontSize: <span class="hljs-number">10</span>,
+
+        <span class="hljs-comment">//String - Point label font colour</span>
+        fontColor: <span class="hljs-string">"#666"</span>,
+
+        <span class="hljs-comment">//Function - Used to determine point labels to show in scale</span>
+        callback: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">pointLabel</span>) </span>{
+            <span class="hljs-keyword">return</span> pointLabel;
+        }
+    },
+}
+</code></pre>
+
+		</div>
+	</section>
+
+			
+				
+	<section id="advanced-usage">
+		<h2 class="section-title">
+			<a class="fragment-link" href="http://www.chartjs.org/docs/#advanced-usage">Advanced usage</a>
+		</h2>
+		<div class="section-text">
+			<h3 id="advanced-usage-prototype-methods"><a class="fragment-link" href="http://www.chartjs.org/docs/#advanced-usage-prototype-methods">Prototype methods</a></h3><p>For each chart, there are a set of global prototype methods on the shared <code>ChartType</code> which you may find useful. These are available on all charts created with Chart.js, but for the examples, let's use a line chart we've made.</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// For example:</span>
+<span class="hljs-keyword">var</span> myLineChart = <span class="hljs-keyword">new</span> Chart(ctx, config);
+</code></pre>
+<h4>.destroy()</h4><p>Use this to destroy any chart instances that are created. This will clean up any references stored to the chart object within Chart.js, along with any associated event listeners attached by Chart.js.
+This must be called before the canvas is reused for a new chart.</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Destroys a specific chart instance</span>
+myLineChart.destroy();
+</code></pre>
+<h4>.update(duration, lazy)</h4><p>Triggers an update of the chart. This can be safely called after replacing the entire data object. This will update all scales, legends, and then re-render the chart.</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// duration is the time for the animation of the redraw in miliseconds</span>
+<span class="hljs-comment">// lazy is a boolean. if true, the animation can be interupted by other animations</span>
+myLineChart.data.datasets[<span class="hljs-number">0</span>].data[<span class="hljs-number">2</span>] = <span class="hljs-number">50</span>; <span class="hljs-comment">// Would update the first dataset's value of 'March' to be 50</span>
+myLineChart.update(); <span class="hljs-comment">// Calling update now animates the position of March from 90 to 50.</span>
+</code></pre>
+<h4>.render(duration, lazy)</h4><p>Triggers a redraw of all chart elements. Note, this does not update elements for new data. Use <code>.update()</code> in that case.</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// duration is the time for the animation of the redraw in miliseconds</span>
+<span class="hljs-comment">// lazy is a boolean. if true, the animation can be interupted by other animations</span>
+myLineChart.render(duration, lazy);
+</code></pre>
+<h4>.stop()</h4><p>Use this to stop any current animation loop. This will pause the chart during any current animation frame. Call <code>.render()</code> to re-animate.</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Stops the charts animation loop at its current frame</span>
+myLineChart.stop();
+<span class="hljs-comment">// =&gt; returns 'this' for chainability</span>
+</code></pre>
+<h4>.resize()</h4><p>Use this to manually resize the canvas element. This is run each time the canvas container is resized, but you can call this method manually if you change the size of the canvas nodes container element.</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Resizes &amp; redraws to fill its container element</span>
+myLineChart.resize();
+<span class="hljs-comment">// =&gt; returns 'this' for chainability</span>
+</code></pre>
+<h4>.clear()</h4><p>Will clear the chart canvas. Used extensively internally between animation frames, but you might find it useful.</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Will clear the canvas that myLineChart is drawn on</span>
+myLineChart.clear();
+<span class="hljs-comment">// =&gt; returns 'this' for chainability</span>
+</code></pre>
+<h4>.toBase64Image()</h4><p>This returns a base 64 encoded string of the chart in it's current state.</p>
+<pre><code class="lang-javascript">myLineChart.toBase64Image();
+<span class="hljs-comment">// =&gt; returns png data url of the image on the canvas</span>
+</code></pre>
+<h4>.generateLegend()</h4><p>Returns an HTML string of a legend for that chart. The legend is generated from the <code>legendCallback</code> in the options.</p>
+<pre><code class="lang-javascript">myLineChart.generateLegend();
+<span class="hljs-comment">// =&gt; returns HTML string of a legend for this chart</span>
+</code></pre>
+<h4>.getElementAtEvent(e)</h4><p>Calling <code>getElementAtEvent(event)</code> on your Chart instance passing an argument of an event, or jQuery event, will return the single element at the event position. If there are multiple items within range, only the first is returned</p>
+<pre><code class="lang-javascript">myLineChart.getElementAtEvent(e);
+<span class="hljs-comment">// =&gt; returns the first element at the event point.</span>
+</code></pre>
+<h4>.getElementsAtEvent(e)</h4><p>Looks for the element under the event point, then returns all elements at the same data index. This is used internally for 'label' mode highlighting.</p>
+<p>Calling <code>getElementsAtEvent(event)</code> on your Chart instance passing an argument of an event, or jQuery event, will return the point elements that are at that the same position of that event.</p>
+<pre><code class="lang-javascript">canvas.onclick = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">evt</span>)</span>{
+    <span class="hljs-keyword">var</span> activePoints = myLineChart.getElementsAtEvent(evt);
+    <span class="hljs-comment">// =&gt; activePoints is an array of points on the canvas that are at the same position as the click event.</span>
+};
+</code></pre>
+<p>This functionality may be useful for implementing DOM based tooltips, or triggering custom behaviour in your application.</p>
+<h4>.getDatasetAtEvent(e)</h4><p>Looks for the element under the event point, then returns all elements from that dataset. This is used internally for 'dataset' mode highlighting</p>
+<pre><code class="lang-javascript">myLineChart.getDatasetAtEvent(e);
+<span class="hljs-comment">// =&gt; returns an array of elements</span>
+</code></pre>
+<h3 id="advanced-usage-external-tooltips"><a class="fragment-link" href="http://www.chartjs.org/docs/#advanced-usage-external-tooltips">External Tooltips</a></h3><p>You can enable custom tooltips in the global or chart configuration like so:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myPieChart = <span class="hljs-keyword">new</span> Chart(ctx, {
+    type: <span class="hljs-string">'pie'</span>,
+    data: data,
+    options: {
+        tooltips: {
+            custom: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">tooltip</span>) </span>{
+                <span class="hljs-comment">// tooltip will be false if tooltip is not visible or should be hidden</span>
+                <span class="hljs-keyword">if</span> (!tooltip) {
+                    <span class="hljs-keyword">return</span>;
+                }
+
+                <span class="hljs-comment">// Otherwise, tooltip will be an object with all tooltip properties like:</span>
+
+                <span class="hljs-comment">// tooltip.caretSize</span>
+                <span class="hljs-comment">// tooltip.caretPadding</span>
+                <span class="hljs-comment">// tooltip.chart</span>
+                <span class="hljs-comment">// tooltip.cornerRadius</span>
+                <span class="hljs-comment">// tooltip.fillColor</span>
+                <span class="hljs-comment">// tooltip.font...</span>
+                <span class="hljs-comment">// tooltip.text</span>
+                <span class="hljs-comment">// tooltip.x</span>
+                <span class="hljs-comment">// tooltip.y</span>
+                <span class="hljs-comment">// etc...</span>
+            }
+        }
+    }
+});
+</code></pre>
+<p>See <code>sample/line-customTooltips.html</code> for examples on how to get started.</p>
+<h3 id="advanced-usage-writing-new-scale-types"><a class="fragment-link" href="http://www.chartjs.org/docs/#advanced-usage-writing-new-scale-types">Writing new scale types</a></h3><p>Starting with Chart.js 2.0 scales can be individually extended. Scales should always derive from Chart.Scale.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> MyScale = Chart.Scale.extend({
+    <span class="hljs-comment">/* extensions ... */</span>
+});
+
+<span class="hljs-comment">// MyScale is now derived from Chart.Scale</span>
+</code></pre>
+<p>Once you have created your scale class, you need to register it with the global chart object so that it can be used. A default config for the scale may be provided when registering the constructor. The first parameter to the register function is a string key that is used later to identify which scale type to use for a chart.</p>
+<pre><code class="lang-javascript">Chart.scaleService.registerScaleType(<span class="hljs-string">'myScale'</span>, MyScale, defaultConfigObject);
+</code></pre>
+<p>To use the new scale, simply pass in the string key to the config when creating a chart.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> lineChart = <span class="hljs-keyword">new</span> Chart(ctx, {
+    data: data,
+    type: <span class="hljs-string">'line'</span>,
+    options: {
+        scales: {
+            yAxes: [{
+                type: <span class="hljs-string">'myScale'</span> <span class="hljs-comment">// this is the same key that was passed to the registerScaleType function</span>
+            }]
+        }
+    }
+})
+</code></pre>
+<h4>Scale Properties</h4><p>Scale instances are given the following properties during the fitting process.</p>
+<pre><code class="lang-javascript">{
+    left: <span class="hljs-built_in">Number</span>, <span class="hljs-comment">// left edge of the scale bounding box</span>
+    right: <span class="hljs-built_in">Number</span>, <span class="hljs-comment">// right edge of the bounding box'</span>
+    top: <span class="hljs-built_in">Number</span>, 
+    bottom: <span class="hljs-built_in">Number</span>,
+    width: <span class="hljs-built_in">Number</span>, <span class="hljs-comment">// the same as right - left</span>
+    height: <span class="hljs-built_in">Number</span>, <span class="hljs-comment">// the same as bottom - top</span>
+
+    <span class="hljs-comment">// Margin on each side. Like css, this is outside the bounding box. </span>
+    margins: {
+        left: <span class="hljs-built_in">Number</span>,
+        right: <span class="hljs-built_in">Number</span>,
+        top: <span class="hljs-built_in">Number</span>,
+        bottom: <span class="hljs-built_in">Number</span>,
+    },
+
+    <span class="hljs-comment">// Amount of padding on the inside of the bounding box (like CSS)</span>
+    paddingLeft: <span class="hljs-built_in">Number</span>,
+    paddingRight: <span class="hljs-built_in">Number</span>,
+    paddingTop: <span class="hljs-built_in">Number</span>,
+    paddingBottom: <span class="hljs-built_in">Number</span>,
+}
+</code></pre>
+<h4>Scale Interface</h4><p>To work with Chart.js, custom scale types must implement the following interface. </p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-comment">// Determines the data limits. Should set this.min and this.max to be the data max/min</span>
+    determineDataLimits: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{},
+
+    <span class="hljs-comment">// Generate tick marks. this.chart is the chart instance. The data object can be accessed as this.chart.data</span>
+    <span class="hljs-comment">// buildTicks() should create a ticks array on the axis instance, if you intend to use any of the implementations from the base class</span>
+    buildTicks: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{},
+
+    <span class="hljs-comment">// Get the value to show for the data at the given index of the the given dataset, ie this.chart.data.datasets[datasetIndex].data[index]</span>
+    getLabelForIndex: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">index, datasetIndex</span>) </span>{},
+
+    <span class="hljs-comment">// Get the pixel (x coordinate for horizontal axis, y coordinate for vertical axis) for a given value</span>
+    <span class="hljs-comment">// @param index: index into the ticks array</span>
+    <span class="hljs-comment">// @param includeOffset: if true, get the pixel halway between the given tick and the next</span>
+    getPixelForTick: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">index, includeOffset</span>) </span>{},
+
+    <span class="hljs-comment">// Get the pixel (x coordinate for horizontal axis, y coordinate for vertical axis) for a given value</span>
+    <span class="hljs-comment">// @param value : the value to get the pixel for</span>
+    <span class="hljs-comment">// @param index : index into the data array of the value</span>
+    <span class="hljs-comment">// @param datasetIndex : index of the dataset the value comes from</span>
+    <span class="hljs-comment">// @param includeOffset : if true, get the pixel halway between the given tick and the next</span>
+    getPixelForValue: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value, index, datasetIndex, includeOffset</span>) </span>{}
+
+    <span class="hljs-comment">// Get the value for a given pixel (x coordinate for horizontal axis, y coordinate for vertical axis)</span>
+    <span class="hljs-comment">// @param pixel : pixel value</span>
+    getValueForPixel: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">pixel</span>) </span>{}
+}
+</code></pre>
+<p>Optionally, the following methods may also be overwritten, but an implementation is already provided by the <code>Chart.Scale</code> base class.</p>
+<pre><code class="lang-javascript">    <span class="hljs-comment">// Transform the ticks array of the scale instance into strings. The default implementation simply calls this.options.ticks.callback(numericalTick, index, ticks); </span>
+    convertTicksToLabels: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{},
+
+    <span class="hljs-comment">// Determine how much the labels will rotate by. The default implementation will only rotate labels if the scale is horizontal. </span>
+    calculateTickRotation: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{},
+
+    <span class="hljs-comment">// Fits the scale into the canvas.</span>
+    <span class="hljs-comment">// this.maxWidth and this.maxHeight will tell you the maximum dimensions the scale instance can be. Scales should endeavour to be as efficient as possible with canvas space.</span>
+    <span class="hljs-comment">// this.margins is the amount of space you have on either side of your scale that you may expand in to. This is used already for calculating the best label rotation</span>
+    <span class="hljs-comment">// You must set this.minSize to be the size of your scale. It must be an object containing 2 properties: width and height.</span>
+    <span class="hljs-comment">// You must set this.width to be the width and this.height to be the height of the scale</span>
+    fit: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{},
+
+    <span class="hljs-comment">// Draws the scale onto the canvas. this.(left|right|top|bottom) will have been populated to tell you the area on the canvas to draw in</span>
+    <span class="hljs-comment">// @param chartArea : an object containing four properties: left, right, top, bottom. This is the rectangle that lines, bars, etc will be drawn in. It may be used, for example, to draw grid lines.</span>
+    draw: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">chartArea</span>) </span>{},
+</code></pre>
+<p>The Core.Scale base class also has some utility functions that you may find useful.</p>
+<pre><code class="lang-javascript">{    
+    <span class="hljs-comment">// Returns true if the scale instance is horizontal</span>
+    isHorizontal: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{},
+
+    <span class="hljs-comment">// Get the correct value from the value from this.chart.data.datasets[x].data[]</span>
+    <span class="hljs-comment">// If dataValue is an object, returns .x or .y depending on the return of isHorizontal()</span>
+    <span class="hljs-comment">// If the value is undefined, returns NaN</span>
+    <span class="hljs-comment">// Otherwise returns the value.</span>
+    <span class="hljs-comment">// Note that in all cases, the returned value is not guaranteed to be a Number</span>
+    getRightValue: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">dataValue</span>) </span>{},
+}
+</code></pre>
+<h3 id="advanced-usage-writing-new-chart-types"><a class="fragment-link" href="http://www.chartjs.org/docs/#advanced-usage-writing-new-chart-types">Writing new chart types</a></h3><p>Chart.js 2.0 introduces the concept of controllers for each dataset. Like scales, new controllers can be written as needed.</p>
+<pre><code class="lang-javascript">Chart.controllers.MyType = Chart.DatasetController.extend({
+
+});
+
+
+<span class="hljs-comment">// Now we can create a new instance of our chart, using the Chart.js API</span>
+<span class="hljs-keyword">new</span> Chart(ctx, {
+    <span class="hljs-comment">// this is the string the constructor was registered at, ie Chart.controllers.MyType</span>
+    type: <span class="hljs-string">'MyType'</span>,
+    data: data,
+    options: options
+});
+</code></pre>
+<h4>Dataset Controller Interface</h4><p>Dataset controllers must implement the following interface.</p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-comment">// Create elements for each piece of data in the dataset. Store elements in an array on the dataset as dataset.metaData</span>
+    addElements: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{},
+
+    <span class="hljs-comment">// Create a single element for the data at the given index and reset its state</span>
+    addElementAndReset: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">index</span>) </span>{},
+
+    <span class="hljs-comment">// Draw the representation of the dataset</span>
+    <span class="hljs-comment">// @param ease : if specified, this number represents how far to transition elements. See the implementation of draw() in any of the provided controllers to see how this should be used</span>
+    draw: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ease</span>) </span>{},
+
+    <span class="hljs-comment">// Remove hover styling from the given element</span>
+    removeHoverStyle: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">element</span>) </span>{},
+
+    <span class="hljs-comment">// Add hover styling to the given element</span>
+    setHoverStyle: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">element</span>) </span>{},
+
+    <span class="hljs-comment">// Update the elements in response to new data</span>
+    <span class="hljs-comment">// @param reset : if true, put the elements into a reset state so they can animate to their final values</span>
+    update: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">reset</span>) </span>{},
+}
+</code></pre>
+<p>The following methods may optionally be overridden by derived dataset controllers</p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-comment">// Initializes the controller</span>
+    initialize: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">chart, datasetIndex</span>) </span>{},
+
+    <span class="hljs-comment">// Ensures that the dataset represented by this controller is linked to a scale. Overridden to helpers.noop in the polar area and doughnut controllers as these</span>
+    <span class="hljs-comment">// chart types using a single scale</span>
+    linkScales: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{},
+
+    <span class="hljs-comment">// Called by the main chart controller when an update is triggered. The default implementation handles the number of data points changing and creating elements appropriately. </span>
+    buildOrUpdateElements: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{}
+}
+</code></pre>
+<h3 id="advanced-usage-extending-existing-chart-types"><a class="fragment-link" href="http://www.chartjs.org/docs/#advanced-usage-extending-existing-chart-types">Extending existing chart types</a></h3><p>Extending or replacing an existing controller type is easy. Simply replace the constructor for one of the built in types with your own.</p>
+<p>The built in controller types are:</p>
+<ul>
+<li><code>Chart.controllers.line</code></li>
+<li><code>Chart.controllers.bar</code></li>
+<li><code>Chart.controllers.radar</code></li>
+<li><code>Chart.controllers.doughnut</code></li>
+<li><code>Chart.controllers.polarArea</code></li>
+<li><code>Chart.controllers.bubble</code></li>
+</ul>
+<h4>Bar Controller</h4><p>The bar controller has a special property that you should be aware of. To correctly calculate the width of a bar, the controller must determine the number of datasets that map to bars. To do this, the bar controller attaches a property <code>bar</code> to the dataset during initialization. If you are creating a replacement or updated bar controller, you should do the same. This will ensure that charts with regular bars and your new derived bars will work seamlessly.</p>
+<h3 id="advanced-usage-creating-plugins"><a class="fragment-link" href="http://www.chartjs.org/docs/#advanced-usage-creating-plugins">Creating Plugins</a></h3><p>Starting with v2.1.0, you can create plugins for chart.js. To register your plugin, simply call <code>Chart.pluginService.register</code> and pass your plugin in.
+Plugins will be called at the following times</p>
+<ul>
+<li>Start of initialization</li>
+<li>End of initialization</li>
+<li>Start of update</li>
+<li>End of update</li>
+<li>Start of draw</li>
+<li>End of draw</li>
+</ul>
+<p>Plugins should derive from Chart.PluginBase and implement the following interface</p>
+<pre><code class="lang-javascript">{
+    beforeInit: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">chartInstance</span>) </span>{ },
+    afterInit: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">chartInstance</span>) </span>{ },
+
+    beforeUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">chartInstance</span>) </span>{ },
+    afterUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">chartInstance</span>) </span>{ },
+
+    <span class="hljs-comment">// This is called at the start of a render. It is only called once, even if the animation will run for a number of frames. Use beforeDraw or afterDraw </span>
+    <span class="hljs-comment">// to do something on each animation frame</span>
+    beforeRender: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">chartInstance</span>) </span>{ },
+
+    <span class="hljs-comment">// Easing is for animation</span>
+    beforeDraw: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">chartInstance, easing</span>) </span>{ },
+    afterDraw: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">chartInstance, easing</span>) </span>{ }
+
+    destroy: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">chartInstance</span>) </span>{ }
+}
+</code></pre>
+<h3 id="advanced-usage-building-chart-js"><a class="fragment-link" href="http://www.chartjs.org/docs/#advanced-usage-building-chart-js">Building Chart.js</a></h3><p>Chart.js uses <a href="http://gulpjs.com/" target="_blank">gulp</a> to build the library into a single JavaScript file. </p>
+<p>Firstly, we need to ensure development dependencies are installed. With node and npm installed, after cloning the Chart.js repo to a local directory, and navigating to that directory in the command line, we can run the following:</p>
+<pre><code class="lang-bash">npm install
+npm install -g gulp
+</code></pre>
+<p>This will install the local development dependencies for Chart.js, along with a CLI for the JavaScript task runner <a href="http://gulpjs.com/" target="_blank">gulp</a>.</p>
+<p>Now, we can run the <code>gulp build</code> task.</p>
+<pre><code class="lang-bash">gulp build
+</code></pre>
+
+		</div>
+	</section>
+
+			
+				
+	<section id="notes">
+		<h2 class="section-title">
+			<a class="fragment-link" href="http://www.chartjs.org/docs/#notes">Notes</a>
+		</h2>
+		<div class="section-text">
+			<h3 id="notes-previous-versions"><a class="fragment-link" href="http://www.chartjs.org/docs/#notes-previous-versions">Previous versions</a></h3><p>Please note - documentation for previous versions are available on the GitHub repo.</p>
+<ul>
+<li><a href="https://github.com/chartjs/Chart.js/tree/v1.1.1/docs" target="_blank">1.x Documentation</a></li>
+</ul>
+<h3 id="notes-browser-support"><a class="fragment-link" href="http://www.chartjs.org/docs/#notes-browser-support">Browser support</a></h3><p>Chart.js offers support for all browsers where canvas is supported.</p>
+<p>Browser support for the canvas element is available in all modern &amp; major mobile browsers <a href="http://caniuse.com/#feat=canvas" target="_blank">(http://caniuse.com/#feat=canvas)</a>.</p>
+<h3 id="notes-bugs-amp-issues"><a class="fragment-link" href="http://www.chartjs.org/docs/#notes-bugs-amp-issues">Bugs &amp; issues</a></h3><p>Please report these on the GitHub page - at <a href="https://github.com/nnnick/Chart.js" target="_blank">github.com/nnnick/Chart.js</a>. If you could include a link to a simple <a href="http://jsbin.com/" target="_blank">jsbin</a> or similar to demonstrate the issue, that'd be really helpful.</p>
+<h3 id="notes-contributing"><a class="fragment-link" href="http://www.chartjs.org/docs/#notes-contributing">Contributing</a></h3><p>New contributions to the library are welcome, just a couple of guidelines:</p>
+<ul>
+<li>Tabs for indentation, not spaces please.</li>
+<li>Please ensure you're changing the individual files in <code>/src</code>, not the concatenated output in the <code>Chart.js</code> file in the root of the repo.</li>
+<li>Please check that your code will pass <code>jshint</code> code standards, <code>gulp jshint</code> will run this for you.</li>
+<li>Please keep pull requests concise, and document new functionality in the relevant <code>.md</code> file.</li>
+<li>Consider whether your changes are useful for all users, or if creating a Chart.js extension would be more appropriate.</li>
+</ul>
+<h3 id="notes-license"><a class="fragment-link" href="http://www.chartjs.org/docs/#notes-license">License</a></h3><p>Chart.js is open source and available under the <a href="http://opensource.org/licenses/MIT" target="_blank">MIT license</a>.</p>
+
+		</div>
+	</section>
+
+			
+		</div>
+		<hr>
+		<footer>
+			<div class="footer-logo">
+	<img src="./Chart.js _ Documentation_files/icon.svg">
+</div>
+<p class="footer-note">Chart.js was built from the hard work of all <a href="https://github.com/chartjs/Chart.js/contributors" target="_blank">these contributors.</a>
+
+		</p></footer>
+		<script async="" src="./Chart.js _ Documentation_files/build.js"></script>
+	
+
+
+
+</body></html>
