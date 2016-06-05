@@ -4,15 +4,114 @@
 <head>
 
 <style>
+
+div{
+	color:#FFFFFF
+}
+
+table tr{
+border-color: grey;
+background: #f6f6f6;
+}
+
+table tr:hover{
+background: Yellow
+}
+
+table tr:nth-of-type(odd):hover {
+  background: Yellow
+}
+
+table tr:nth-of-type(odd) {
+  background: #e9e9e9;
+}
+
  table tr td{
-	text-align:center;
-	border: 1px solid black;
+	 padding: 6px 12px;
+
  }
  
  table tr th{
-	text-align:center;
-	border: 1px solid black;
+	border-spacing: 0px;
+      font-weight: 900;
+  color: #ffffff;
+ background: #2980b9;
  }
+ 
+ .tableClass{
+ border-spacing: 0px;
+ margin: 0 0 40px 0;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: table;
+
+ }
+ 
+ body {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #3b3b3b;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  background: #2b2b2b;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 800px;
+}
+
+.table {
+  margin: 0 0 40px 0;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: table;
+}
+@media screen and (max-width: 580px) {
+  .table {
+    display: block;
+  }
+}
+
+.row {
+  display: table-row;
+  background: #f6f6f6;
+}
+.row:nth-of-type(odd) {
+  background: #e9e9e9;
+}
+.row.header {
+  font-weight: 900;
+  color: #ffffff;
+  background: #ea6153;
+}
+.row.green {
+  background: #27ae60;
+}
+.row.blue {
+  background: #2980b9;
+}
+@media screen and (max-width: 580px) {
+  .row {
+    padding: 8px 0;
+    display: block;
+  }
+}
+
+.cell {
+  padding: 6px 12px;
+  display: table-cell;
+}
+@media screen and (max-width: 580px) {
+  .cell {
+    padding: 2px 12px;
+    display: block;
+  }
+}
+
 </style>
 <script>
 
@@ -38,6 +137,7 @@ s||l.reverse(),a.max=e.max(l),a.min=e.min(l),n.reverse?(l.reverse(),a.start=a.ma
 <div style="text-align:center"><h2>Data Source: CLM</h2></div>
 
 <div style="text-align:center"><h3>Different Table Name</h3></div>
+
 <table width="100%">
 <tr><th width="50%">Source Database</th><th width="50%">Destination Database</th></tr>
 <tr><td>abc</td><td>123</td></tr>
@@ -46,7 +146,8 @@ s||l.reverse(),a.max=e.max(l),a.min=e.min(l),n.reverse?(l.reverse(),a.start=a.ma
 </table>
 
 <div style="text-align:center"><h3>Different Table Columns</h3></div>
-<table width="100%">
+
+<table width="100%"  >
 <tr><th width="50%" colspan="2">Source Database</th><th width="50%" colspan="2">Destination Database</th></tr>
 <tr><td>Table Name:ABC</td><td>Column Size:5</td><td>Table Name:123</td><td>Column Size:8</td></tr>
 <tr><td colspan="2">abcabc,asdas,asd,zxc,asd,qwe,qwe,et,wer,qwe</td><td colspan="2">123,abc,1231,12312,123,123,123,123</td></tr>
@@ -59,7 +160,7 @@ s||l.reverse(),a.max=e.max(l),a.min=e.min(l),n.reverse?(l.reverse(),a.start=a.ma
 
 
 <div style="text-align:center"><h3>Different Table Rows</h3></div>
-<table width="100%">
+<table width="100%" >
 <tr><th width="50%" colspan="2">Source Database</th><th width="50%"  colspan="2">Destination Database</th></tr>
 
 	<tr><td>Table Name</td><td>Row Number</td><td>Table Name</td><td>Row Number</td></tr>
