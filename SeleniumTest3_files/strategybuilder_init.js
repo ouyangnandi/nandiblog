@@ -1,0 +1,5 @@
+var blockly_loaded=false;function blockly_init(){$.get("scriptlib/strategybuilder/toolbox.xml",function(data){var toolbox=data;var myIFrame=document.getElementById("content_blocks");Blockly.inject(myIFrame,{path:'./scriptlib/strategybuilder/',toolbox:toolbox});window.Blockly=Blockly;blockly_loaded=true;},"text");}
+function blockly_init_local(){$.get("toolbox.xml",function(data){var toolbox=data;var myIFrame=document.getElementById("content_blocks");Blockly.inject(myIFrame,{path:'./',toolbox:toolbox});window.Blockly=Blockly;blockly_loaded=true;Blockly.Xml.domToWorkspace(Blockly.mainWorkspace,document.getElementById('sample'));},"text");}
+function blockly_runJS(){var code=Blockly.Generator.workspaceToCode('JavaScript');try{eval(code);}catch(e){alert('Program error:\n'+ e);}}
+function loadStrategyBuilder(blockDef){var xmlDOM=$.parseXML(blockDef);setToStrategyBuilder(xmlDOM);}
+function setToStrategyBuilder(xmlDOM){try{setTimeout(function(){if(blockly_loaded){Blockly.Xml.domToWorkspace(Blockly.mainWorkspace,xmlDOM.firstChild);}else{setToStrategyBuilder(xmlDOM);}},500);}catch(err){alert(err);}}
