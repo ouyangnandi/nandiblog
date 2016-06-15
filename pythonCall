@@ -1,0 +1,13 @@
+import subprocess as sub
+sub.call(["java", "-jar", "-Xmx512m", "MyFile.jar", 
+         featuresFileName, numIterations, featureCutOff])
+subprocess.call(['java', '-jar', 'temp.jar', '-Xmx1024m', '-Xms256m'])
+         
+import os
+
+if __name__ == "__main__":
+   startingDir = os.getcwd() # save our current directory
+   testDir = "\\test" # note that \ is windows specific, and we have to escape it
+   os.chdir(testDir) # change to our test directory
+   os.system("java -jar run_this.jar required_paramter.ext")
+   os.chdir(startingDir) # change back to where we started
