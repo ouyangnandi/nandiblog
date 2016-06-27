@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TXLife xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://ACORD.org/Standards/Life/2" Version="2.29.00">
+<UserAuthRequest>
+	<UserLoginName>TestUserName</UserLoginName>
+	<UserDomain>ASIA</UserDomain>
+	<VendorApp VendorCode="0002">
+		<VendorName>SalesForce</VendorName>
+		<AppName>Web Portal</AppName>
+		<AppVer>1.00</AppVer>
+	</VendorApp>
+</UserAuthRequest>
+
+<TXLifeRequest id="request001" PrimaryObjectID="holding001">
+	<TransRefGUID>an UUID</TransRefGUID>
+	<TransType tc="203">Holding Inquiry</TransType>
+	<TransSubType tc="20300">Holding Inquiry</TransSubType>
+	<TransExeDate>2006-09-28</TransExeDate>
+	<TransExeTime>12:35:02</TransExeTime>
+	<InquiryLevel tc="1">Target Object Only</InquiryLevel>
+	<PrimaryObjectType tc="4">Holding</PrimaryObjectType>
+	<OLifE>
+		<Holding id="holding001">
+			<HoldingTypeCode tc="2">Policy</HoldingTypeCode>
+			<Policy id="policy001">
+				<PolNumber>123456</PolNumber>
+			</Policy>
+	    </Holding>
+	</OLifE>
+	
+</TXLifeRequest>
+
+</TXLife>
+
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TXLife xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://ACORD.org/Standards/Life/2" Version="2.29.00">
+
+<TXLifeResponse id="response001" PrimaryObjectID="holding001">
+	<TransRefGUID>GUID got from request </TransRefGUID>
+	<TransType tc="203">Holding Inquiry</TransType>
+	<TransSubType tc="20300">Holding Inquiry</TransSubType>
+	<TransExeDate>2006-09-28</TransExeDate>
+	<TransExeTime>12:35:02</TransExeTime>
+	<InquiryLevel tc="1">Target Object Only</InquiryLevel>
+	<PrimaryObjectType tc="4">Holding</PrimaryObjectType>
+	<TransResult>
+		<ResultCode tc="1">RESULT SUCCESS</ResultCode>
+		<RecordsFound>10</RecordsFound>
+		<ResultInfo>
+			<ResultInfoCode tc="100">RESULTINFO GENERAL</ResultInfoCode>
+			<ResultInfoDesc>Error Message if have</ResultInfoDesc>
+		</ResultInfo>
+	</TransResult>
+	<OLifE>
+		<Holding id="holding001">
+			<HoldingTypeCode tc="2">Policy</HoldingTypeCode>
+			<Policy id="policy001">
+				<PolNumber>123456</PolNumber>
+				<PolicyStatus tc="1">ACTIVE</PolicyStatus>
+				<PolicyStatusDesc>Active</PolicyStatusDesc>
+				<EffDate></EffDate>
+				<TermDate></TermDate>
+				<ProductCode>1234567</ProductCode>
+				<PlanName>TestName</PlanName>
+				<MarketingName>TestMarketingName</MarketingName>
+				<PaidToDate></PaidToDate>
+				<PaymentMode tc="1">Annually</PaymentMode>
+				<PaymentAmt></PaymentAmt>
+				<OLifEExtension VendorCode="0001">
+						<PolCurrency>Internal Currency Code</PolCurrency>
+						<PolCurrencyDesc>USD</PolCurrencyDesc>
+				<PolicyXLat>
+						<Language tc="589">Chinese(Taiwanese)</Language>
+						<PlanName>TestPlanName</PlanName>
+						<OLifEExtension VendorCode="0001">
+							<PolicyStatusDesc>Status1</PolicyStatusDesc>
+							<MarketingName>TestMarketingName</MarketingName>
+							<PolCurrencyDesc>USD</PolCurrencyDesc>
+						</OLifEExtension>
+				</PolicyXLat>		
+				</OLifEExtension>
+	
+
+						
+			</Policy>
+	    </Holding>
+	</OLifE>
+	
+</TXLifeResponse>
+
+</TXLife>
