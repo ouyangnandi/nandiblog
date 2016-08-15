@@ -1,0 +1,79 @@
+
+
+
+When it comes to conventions regarding how to structure your packages in Java (or any other language in fact) there is a wide variety of opinion. Making the right decision can promote productivity, understandability, quality, flexibility and the construction of reusable frameworks.
+
+ I've seen some people promote 'package by feature' over 'package by layer' but I've used quite a few approaches and found 'package by layer' much better than 'package by feature' but further from that I have found that a hybrid: 'package by layer then feature' strategy works extremely well in practice and here's why I think that's so.
+
+
+Package by layer then feature
+The 'package by feature' people tend to want to put all user interface, model classes, persistence classes (eg., DAO - if you're into self torture ;]) for a particular feature into the same package and according to many examples, the same directory. i.e. they don't use a different directory with the same package as is excellent practice for test source code because the test code can then access package level items to test them.
+ They then claim that their 'separation of concerns' comes from having separate classes in the same package. Huh? That makes no sense whatsoever - 'separate' in my book means completely separate - like get them the hell away from each other already!
+
+
+'Plug and Play' Layer implementations
+Let's say I design and implement a really sophisticated object model and I use a particular Java Web UI framework (say some popular but old fashioned one) to build a web app around this model. Consequences are:
+•'Package by feature' places my UI code in the same package as my model code.
+•'Package by layer' places my UI code in a separate package to my model code.
+Now let's say I want to change to a more modern component based OO web UI framework like Wicket. Consequences are:
+•'Package by layer' lets you start to build up a separate package for the Wicket UI classes. When it's working you can simply delete the old UI package and use the Wicket package instead - all the time nothing in the model package ever needs to get touched. This actually happened to one of our projects and it worked like a treat. We even had both frameworks in use in production at the same time as we gradually replaced screens using the old UI framework with Wicket screens.
+•With 'package by feature' this would have been an unholy mess - both JSP and Wicket classes in the same package/directory.
+
+
+'package by layer' makes it easy to build reusable frameworks/libraries
+Another advantage of 'package by layer' is that we can build shared libraries/frameworks that require both model and UI and we can distribute different versions of the framework with the same model code but with different UI libary implementations. You can't do this easily if you've followed 'package by feature' because all of your UI code for the different UI frameworks ends up in the same package/directory - ugly!
+
+
+Ugly breakdown of encapsulation and decoupling with 'package by feature'
+There's one thing about 'package by feature' that is promoted as a feature but is IMHO a complete breakdown of everything you've ever learned. Using the same package for say model and test code is great for test code because it gives that code privileged access to test items with package level access in your model code which would be impossible otherwise. The very reason that those items were made package level was to enforce separation of concerns and reduce coupling. The developer of those package level items in the model wanted to allow access by other model objects in the same package but DENY access to other classes outside the package - like UI classes!
+ 'Package by feature' places UI items directly in the same package as model objects meaning you'll be throwing away any language supported enforcement of decoupling that was placed in the model by the designer. You just can't promote a packaging scheme that breaks down language enforced decoupling and be taken seriously.
+
+
+Naive assumptions about features and layers
+'Package by feature' assumes that the UI code for a feature has a nice one-to-one relationship with the model code for that feature. This goes against all of my experiences. In most apps a particular UI element pulls in various features of the model. Often there are 'core' model objects that are used by just about every UI element. Which 'feature' package do you place those UI elements in?
+
+
+Summary of suggested approach
+So IMHO the best approach is a hybrid 'package by layer' and then, after you've split things up by layer, then the next level in your package splits them up by feature. I also use a slightly different approach for reusable 'frameworks' or 'libraries' than the one I use for apps.
+
+ The format looks something like this:
+
+ revdomain.moduleType.moduleName.layer.[layerImpl].feature.subfeatureN.subfeatureN+1...
+
+ Where: 
+revdomain Reverse domain e.g. com.mycompany
+moduleType [app*|framework|util] 
+moduleName e.g. myAppName if module type is an app or 'finance' if its an accounting framework 
+layer [model|ui|persistence|security etc.,]
+layerImpl eg., wicket, jsp, jpa, jdo, hibernate (Note: model layer has only single implementation so leave out for model layer)
+feature eg., finance
+subfeatureN eg., accounting
+subfeatureN+1 eg., depreciation
+
+ *Sometimes 'app' left out if moduleType is an application but putting it in there makes the package structure consistent across all module types.
+
+
+eg., framework where some UI elements require access to common model objects in feature 1 but UI elements for feature2 model objects have very specific feature 2 references
+ com.mycompany.framework.myFrameworkA.model.feature1
+ com.mycompany.framework.myFrameworkA.model.feature2
+ com.mycompany.framework.myFrameworkA.ui.wicket
+ com.mycompany.framework.myFrameworkA.ui.wicket.feature2 If you decide to make your framework available for multiple UI libaries you would add separate packages for each of these and ship each with the shared model code.
+
+com.mycompany.framework.myFrameworkA.ui.jsp
+com.mycompany.framework.myFrameworkA.ui.jsp.feature2
+
+com.mycompany.framework.myFrameworkA.ui.jsf
+com.mycompany.framework.myFrameworkA.ui.jsf.feature2 I usually rename 'framework' with 'util' if it's more of a basic utility more than a framework with its own model and UI.
+ If you write code using a persistence technology that supports transparent persistence (e.g. an ORM) then your model code can be written in a fairly ORM agnostic way but you'll put supporting, ORM specific repository/service classes (or DAO classes if your into that) in a separate package for the persistence layer
+ e.g.
+com.mycompany.framework.myFrameworkA.persistence.jdo.feature1
+com.mycompany.framework.myFrameworkA.persistence.jdo.feature2
+
+com.mycompany.framework.myFrameworkA.persistence.jpa.feature1
+com.mycompany.framework.myFrameworkA.persistence.jpa.feature2 eg., for apps I drop the 'framework' and follow mycompany with the app name:
+
+com.mycompany.app.myApp.model.feature1
+com.mycompany.app.myApp.model.feature2
+com.mycompany.app.myApp.persistence.jpa.feature2
+com.mycompany.app.myApp.ui.wicket
+com.mycompany.app.myApp.ui.wicket.feature2
