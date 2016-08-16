@@ -1,0 +1,9 @@
+
+DAO : Class that contains the basic CRUD operations for one entity class. It has the necessary code to get or retrieve things of the underlying persistent storage system. Generally speaking, the methods receive object entities as parameters, except in the retrieve method where using a type of the Identifier is valid.
+
+
+•Repositories : In a higher level of abstraction.. as generally I have read is a kind of place where put code that handle operations over aggregate objects (objects that have child objects). It uses the DAOs to retrieve objects from the database, and in the end it exposes an interface in the domain "business" language. (But again, I think it is very valid to use data types of ids). Example : A very simple addSomething where something is a child object of the parent whose instances, btw, are managed as a whole by the Repository.
+
+
+•Services : Again, it is in a higher level of abstraction. To my humble point of view they are a good place to connect two classes that do not share parent-child relation, but is as far (in abstraction terms
+
