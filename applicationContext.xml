@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:security="http://www.springframework.org/schema/security"
+	xmlns:task="http://www.springframework.org/schema/task" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/aop
+	    http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+	    http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-3.1.xsd
+		http://www.springframework.org/schema/security 
+		http://www.springframework.org/schema/security/spring-security.xsd
+	    http://www.springframework.org/schema/task   
+	    http://www.springframework.org/schema/task/spring-task-3.1.xsd">
+
+	<import resource="classes/resources/database/datasource.xml" />
+	<import resource="classes/resources/database/hibernate.xml" />
+
+	<context:component-scan base-package="com.cigna.digital" />
+	<context:property-placeholder
+		location="classpath:resources/config/app.properties" />
+	<task:annotation-driven executor="eventListenerExecutor" />
+	
+	<task:executor id="eventListenerExecutor"  pool-size="10" />
+	
+	
+	<bean id="txManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<tx:annotation-driven transaction-manager="txManager" />
+
+	<bean id="roleHierarchy"
+		class="org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl" />
+
+	<bean id="methodSecurityExpressionHandler"
+		class="com.cigna.digital.security.CignaMethodSecurityExpressionHandler">
+		<property name="roleHierarchy" ref="roleHierarchy" />
+	</bean>
+
+	<bean id="applicationEventMulticaster"
+		class="org.springframework.context.event.SimpleApplicationEventMulticaster">
+		<property name="taskExecutor" ref="eventListenerExecutor" />
+	</bean>
+
+	<bean id="xmlValidation" class="com.cigna.digital.security.XMLValidation">
+		<property name="validateTXLifeXSDPath" value="classpath:resources/xmlschema/TXLife.xsd" />
+		<property name="validateTXAccountXSDPath" value="classpath:resources/xmlschema/TXAccount.xsd" />
+		<property name="validateTXServiceXSDPath" value="classpath:resources/xmlschema/TXService.xsd" />
+		<property name="validateTXFundXSDPath" value="classpath:resources/xmlschema/TXFund.xsd" />
+		<property name="validateTXNBXSDPath" value="classpath:resources/xmlschema/TXNB.xsd" />
+	</bean>
+
+	<security:global-method-security
+		pre-post-annotations="enabled">
+		<security:expression-handler ref="methodSecurityExpressionHandler" />
+	</security:global-method-security>
+
+	<bean id="customAuthenticationProvider"
+		class="com.cigna.digital.security.DigitalAuthenticationProvider" />
+
+	<security:authentication-manager>
+		<security:authentication-provider
+			ref="customAuthenticationProvider" />
+	</security:authentication-manager>
+
+	<bean id="xmlSQLUtils" class="com.cigna.digital.utilImpl.XMLSQLUtilsImpl">
+		<property name="filePath"
+			value="classpath:resources/database/SQLStatement.xml" />
+	</bean>
+</beans>
