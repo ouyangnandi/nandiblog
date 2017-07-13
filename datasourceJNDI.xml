@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName" value="jdbc/hkws" />
+		<property name="lookupOnStartup" value="false" />
+		<property name="cache" value="true" />
+		<property name="proxyInterface" value="javax.sql.DataSource" />
+	</bean>
+
+	<bean id="dataSourceCapsil" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName" value="jdbc/capsil" />
+		<property name="lookupOnStartup" value="false" />
+		<property name="cache" value="true" />
+		<property name="proxyInterface" value="javax.sql.DataSource" />
+	</bean>
+
+	<bean id="dataSourceIpas" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName" value="jdbc/ipas" />
+		<property name="lookupOnStartup" value="false" />
+		<property name="cache" value="true" />
+		<property name="proxyInterface" value="javax.sql.DataSource" />
+
+	</bean>
+
+	<bean id="dataSourceSystem6" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName" value="jdbc/system6" />
+		<property name="lookupOnStartup" value="false" />
+		<property name="cache" value="true" />
+		<property name="proxyInterface" value="javax.sql.DataSource" />
+	</bean>
+
+	<bean id="dataSourceWebappHK" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName" value="jdbc/webappHK" />
+		<property name="lookupOnStartup" value="false" />
+		<property name="cache" value="true" />
+		<property name="proxyInterface" value="javax.sql.DataSource" />
+	</bean>
+	
+	<bean id="dataSourceEsales" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName" value="jdbc/eSalesWS" />
+		<property name="lookupOnStartup" value="false" />
+		<property name="cache" value="true" />
+		<property name="proxyInterface" value="javax.sql.DataSource" />
+	</bean>
+	
+	<bean id="dataSourceCITAS" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName" value="jdbc/citas" />
+		<property name="lookupOnStartup" value="false" />
+		<property name="cache" value="true" />
+		<property name="proxyInterface" value="javax.sql.DataSource" />
+	</bean>
+ 
+</beans>
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+		<property name="url" value="jdbc:sqlserver://HKIODIXUW002:1433" />
+		<property name="username" value="hkiodisvc" />
+		<property name="password" value="Cigna123" />
+	</bean>
+
+	<bean id="dataSourceCapsil"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.ibm.as400.access.AS400JDBCDriver" />
+		<property name="url" value="jdbc:as400://HKRASU01;libraries=HKUALA17DB" />
+		<property name="username" value="HK1UATG1" />
+		<property name="password" value="HK1UATG1" />
+	</bean>
+
+	<!-- <bean id="dataSourceIpas"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.ibm.as400.access.AS400JDBCDriver" />
+		<property name="url" value="jdbc:as400://HKRASU01;libraries=HKIUAT30DB" />
+		<property name="username" value="HKIPASSITG" />
+		<property name="password" value="HKIPASSITG" />
+	</bean> -->
+	
+	<bean id="dataSourceIpas"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.ibm.as400.access.AS400JDBCDriver" />
+		<property name="url" value="jdbc:as400://HKRASU01;libraries=HKIUAT30DB" />
+		<property name="username" value="HKIPASUAT" />
+		<property name="password" value="HKIPASUAT" />
+	</bean>
+
+	<bean id="dataSourceSystem6"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.ibm.db2.jcc.DB2Driver" />
+		<property name="url" value="jdbc:db2://hkiapp68:50000/ic2" />
+		<property name="username" value="admin" />
+		<property name="password" value="admin" />
+	</bean>
+
+	<bean id="dataSourceWebappHK"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+		<property name="url" value="jdbc:sqlserver://192.168.138.180:1433;DatabaseName=WEBAPP_HK" />
+		<property name="username" value="QUOTE_HK_user" />
+		<property name="password" value="QUOTE_HK_C2341" />
+	</bean>
+	
+	<bean id="dataSourceEsales"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+		<property name="url" value="jdbc:sqlserver://HKIODIXUW002:1433" />
+		<property name="username" value="hkiodisvc" />
+		<property name="password" value="Cigna123" />
+	</bean>
+	
+	<bean id="dataSourceCITAS"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+		<property name="url" value="jdbc:sqlserver://HKISQLBUW004:1433" />
+		<property name="username" value="hkiodisvc" />
+		<property name="password" value="Cigna123" />
+	</bean>
+
