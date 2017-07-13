@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'
+	debug="false">
+
+	<appender name="DAILY_FILE" class="org.apache.log4j.DailyRollingFileAppender">
+
+		<param name="File" value="CignaFWLog/CignaFW_Log.log" />
+
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		
+		<param name="Threshold" value="INFO"/>
+		
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%X{logTime} [%t:%r] - [%p] LoginName: %X{loginName} Uid:%X{tranuid} WSMethodName:%X{wsMethodName} Source:%X{sourceIP} Trail:%X{className}.%X{methodName} %m%n" />
+		</layout>
+
+	</appender>
+
+	<appender name="ASYNC_FILE" class="org.apache.log4j.AsyncAppender">
+
+		<param name="BufferSize" value="100000" />
+
+		<param name="blocking" value="false" />
+
+		<appender-ref ref="DAILY_FILE" />
+
+	</appender>
+	
+	<appender name="DAILY_FILE_ERROR" class="org.apache.log4j.RollingFileAppender">
+
+		<param name="File" value="CignaFWLog/CignaFW_ERROR_Log.log" />
+
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		
+		<param name="Threshold" value="ERROR"/>
+		
+		<param name="MaxFileSize" value="10MB"/>
+
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="$Time:%X{logTime} $[%t:%r] $Level:[%p] $LoginName: %X{loginName} $Uid:%X{tranuid} $WSMethodName:%X{wsMethodName} $Trail:%X{className}.%X{methodName} $Message:%X{message} %n" />
+		</layout>
+
+	</appender>
+	
+	<appender name="ASYNC_FILE_ERROR" class="org.apache.log4j.AsyncAppender">
+
+		<param name="BufferSize" value="100000" />
+
+		<param name="blocking" value="false" />
+
+		<appender-ref ref="DAILY_FILE_ERROR" />
+
+	</appender>
+	
+	<appender name="DAILY_FILE_FATAL" class="org.apache.log4j.RollingFileAppender">
+
+		<param name="File" value="CignaFWLog/CignaFW_FATAL_Log.log" />
+
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		
+		<param name="Threshold" value="FATAL"/>
+		
+		<param name="MaxFileSize" value="10MB"/>
+
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="$Time:%X{logTime} $[%t:%r] $Level:[%p] $LoginName: %X{loginName} $Uid:%X{tranuid} $WSMethodName:%X{wsMethodName} $Trail:%X{className}.%X{methodName} $Message:%X{message} %n" />
+		</layout>
+
+	</appender>
+	
+	<appender name="ASYNC_FILE_FATAL" class="org.apache.log4j.AsyncAppender">
+
+		<param name="BufferSize" value="100000" />
+
+		<param name="blocking" value="false" />
+
+		<appender-ref ref="DAILY_FILE_FATAL" />
+
+	</appender>
+	
+
+	<appender name="ASYNC_OUTPUT" class="org.apache.log4j.ConsoleAppender">
+	
+		<param name="Threshold" value="INFO" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%X{logTime} [%t:%r] - [%p] LoginName: %X{loginName} Uid:%X{tranuid} WSMethodName:%X{wsMethodName} Source:%X{sourceIP} Trail:%X{className}.%X{methodName} %m%n" />
+		</layout>
+
+	</appender>
+
+
+	<appender name="DB_OUT" class="org.apache.log4j.jdbc.JDBCAppender">
+
+		<param name="URL" value="jdbc:sqlserver://HKIODIXUW002:1433" />
+
+		<param name="Driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+
+		<param name="User" value="hkiodisvc" />
+
+		<param name="Password" value="Cigna123" />
+
+		<param name="Sql"
+			value="INSERT INTO HK_WS.dbo.WS_CALL_LOG (WCL_LOGIN_NAME,WCL_TRANS_GUID,WCL_MESSAGE_TYPE,WCL_CLASS_NAME,WCL_METHOD_NAME,WCL_TRANS_DT,WCL_MESSAGE,WCL_LOG_LEVEL,WCL_LOG_SOURCE,WCL_LOG_WS_METHOD) values ('%X{loginName}','%X{tranuid}','%X{type}','%X{className}','%X{methodName}',convert(datetime, '%X{logTime}', 21),N'%m','%p','%X{sourceIP}','%X{wsMethodName}')" />
+
+	</appender>
+
+	<appender name="ASYNC_DB" class="org.apache.log4j.AsyncAppender">
+
+		<param name="BufferSize" value="100000" />
+
+		<param name="blocking" value="false" />
+
+		<appender-ref ref="DB_OUT" />
+
+	</appender>
+
+	<appender name="NI_APPENDER" class="org.apache.log4j.AsyncAppender">
+
+		<param name="BufferSize" value="100000" />
+
+		<param name="blocking" value="false" />
+
+		<appender-ref ref="NI_DAILY_FILE" />
+
+	</appender>
+	
+	<appender name="BK_APPENDER" class="org.apache.log4j.AsyncAppender">
+
+		<param name="BufferSize" value="100000" />
+
+		<param name="blocking" value="false" />
+
+		<appender-ref ref="BK_DAILY_FILE" />
+
+	</appender>
+
+	<appender name="NI_DAILY_FILE" class="org.apache.log4j.DailyRollingFileAppender">
+
+		<param name="File" value="\\\\hkiapp28\\Input\\Digital_notification\\log\\NI.log" />
+
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-d{yyyy-MM-dd HH:mm:ss} [%t:%r] - [%p] %m%n" />
+		</layout>
+
+	</appender>
+	
+	<appender name="BK_DAILY_FILE" class="org.apache.log4j.DailyRollingFileAppender">
+
+		<param name="File" value="\\\\hkiapp28\\Input\\Digital_broker_doc\\log\\BK.log" />
+
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-d{yyyy-MM-dd HH:mm:ss} [%t:%r] - [%p] %m%n" />
+		</layout>
+
+	</appender>
+
+	<appender name="NI_ASYNC_OUTPUT" class="org.apache.log4j.ConsoleAppender">
+
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-d{yyyy-MM-dd HH:mm:ss} [%t:%r] - [%p] %m%n" />
+		</layout>
+
+	</appender>
+	
+	<appender name="BK_ASYNC_OUTPUT" class="org.apache.log4j.ConsoleAppender">
+
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-d{yyyy-MM-dd HH:mm:ss} [%t:%r] - [%p] %m%n" />
+		</layout>
+
+	</appender>
+	
+     <logger name="NI_LOG">
+		<level value="INFO" />
+		<appender-ref ref="NI_APPENDER" />
+		<appender-ref ref="NI_ASYNC_OUTPUT" />
+	</logger>
+	
+	 <logger name="BK_LOG">
+		<level value="INFO" />
+		<appender-ref ref="BK_APPENDER" />
+		<appender-ref ref="BK_ASYNC_OUTPUT" />
+	</logger>
+	
+	<root>
+		<level value="INFO" />
+		<appender-ref ref="ASYNC_FILE" />
+		<appender-ref ref="ASYNC_FILE_ERROR" />
+		<appender-ref ref="ASYNC_FILE_FATAL" />
+		<appender-ref ref="ASYNC_DB" />
+		<appender-ref ref="ASYNC_OUTPUT" />
+	</root>
+  
+</log4j:configuration>
